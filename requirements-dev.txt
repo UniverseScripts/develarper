@@ -5,3 +5,4 @@ mypy==1.10.0
 ruff==0.4.4
 pre-commit==3.7.1
 huggingface_hub==0.23.0
+llama-cpp-python
