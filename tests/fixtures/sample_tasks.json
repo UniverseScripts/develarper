@@ -1,0 +1,42 @@
+[
+  {
+    "task_id": "factual_1",
+    "prompt": "What is the capital of France?",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "sentiment_1",
+    "prompt": "Classify the sentiment of: I love this product!",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "summarization_1",
+    "prompt": "Summarize: Artificial intelligence has rapidly transformed many industries over the past decade.",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "ner_1",
+    "prompt": "Extract entities: Barack Obama was born in Hawaii.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "math_1",
+    "prompt": "Calculate 342 * 12",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "debug_1",
+    "prompt": "Fix syntax error in: def foo() return 42",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "logic_1",
+    "prompt": "If A > B and B > C, is A > C?",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "code_gen_1",
+    "prompt": "Write a python function to add two numbers.",
+    "expected_route": "API_CODE"
+  }
+]

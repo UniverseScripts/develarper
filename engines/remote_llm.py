@@ -181,7 +181,11 @@ class RemoteLLMEngine:
                     response.raise_for_status()
 
                 data = await response.json()
-                if is_chat:
-                    return str(data["choices"][0]["message"]["content"]).strip()
-                else:
-                    return str(data["choices"][0]["text"]).strip()
+                try:
+                    if is_chat:
+                        return str(data["choices"][0]["message"]["content"]).strip()
+                    else:
+                        return str(data["choices"][0]["text"]).strip()
+                except KeyError as e:
+                    logger.error("Response structure: %s", data)
+                    raise e
