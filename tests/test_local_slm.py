@@ -5,7 +5,7 @@ import pytest
 from engines.local_slm import LocalSLMEngine
 
 
-@pytest.mark.skipif(not os.path.exists("models/qwen2.5-1.5b-instruct-q4_k_m.gguf"), reason="Model weights not found")
+@pytest.mark.skipif(not os.path.exists("models/qwen2.5-3b-instruct-q4_k_m.gguf"), reason="Model weights not found")
 def test_local_slm_basic() -> None:
     # Use Metal on Mac for faster test execution
     os.environ["LOCAL_N_GPU_LAYERS"] = "-1"
@@ -17,7 +17,7 @@ def test_local_slm_basic() -> None:
     assert response.strip() == "Hello"
 
 
-@pytest.mark.skipif(not os.path.exists("models/qwen2.5-1.5b-instruct-q4_k_m.gguf"), reason="Model weights not found")
+@pytest.mark.skipif(not os.path.exists("models/qwen2.5-3b-instruct-q4_k_m.gguf"), reason="Model weights not found")
 def test_local_slm_escalation() -> None:
     engine = LocalSLMEngine.get_instance()
 

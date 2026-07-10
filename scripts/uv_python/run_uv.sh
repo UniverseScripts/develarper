@@ -38,7 +38,7 @@ fi
 
 # --- Check model weights ---
 MODEL_PATH=$(grep "LOCAL_MODEL_PATH" .env | cut -d= -f2 | xargs)
-MODEL_PATH="${MODEL_PATH:-models/qwen2.5-1.5b-instruct-q4_k_m.gguf}"
+MODEL_PATH="${MODEL_PATH:-models/qwen2.5-3b-instruct-q4_k_m.gguf}"
 if [ ! -f "$MODEL_PATH" ]; then
     error "Model not found at '$MODEL_PATH'. Run 'bash scripts/download_model.sh' first."
 fi

@@ -24,7 +24,7 @@ Input Task
     │
     ├─► LOCAL_SENTIMENT / LOCAL_NER / LOCAL_GENERAL
     │       ▼
-    │   [L3] Qwen2.5-1.5B Q4_K_M via llama.cpp  →  0 Fireworks tokens
+    │   [L3] Qwen2.5-3B Q4_K_M via llama.cpp  →  0 Fireworks tokens
     │       │ __ESCALATE__ signal
     │       ▼
     └─► API_MATH / API_CODE / API_LOGIC / API_LONG_CONTEXT
@@ -38,13 +38,13 @@ Input Task
 
 | Domain | Route | Engine | Token Budget |
 |---|---|---|---|
-| Factual Knowledge | `LOCAL_GENERAL` | Qwen2.5-1.5B | 150 (local) |
+| Factual Knowledge | `LOCAL_GENERAL` | Qwen2.5-3B | 150 (local) |
 | Math – pure expression | `AST_EVAL` | AST (deterministic) | 0 |
 | Math – word problem | `API_MATH` | `gemma-4-31b-it` | 50 |
-| Sentiment Classification | `LOCAL_SENTIMENT` | Qwen2.5-1.5B | 20 (local) |
-| Text Summarization (≤6k) | `LOCAL_GENERAL` | Qwen2.5-1.5B | 250 (local) |
+| Sentiment Classification | `LOCAL_SENTIMENT` | Qwen2.5-3B | 20 (local) |
+| Text Summarization (≤6k) | `LOCAL_GENERAL` | Qwen2.5-3B | 250 (local) |
 | Text Summarization (>6k) | `API_LONG_CONTEXT` | `gemma-4-26b-a4b-it` | 200 |
-| Named Entity Recognition | `LOCAL_NER` | Qwen2.5-1.5B | 300 (local) |
+| Named Entity Recognition | `LOCAL_NER` | Qwen2.5-3B | 300 (local) |
 | Code Debugging | `API_CODE` | `kimi-k2p7-code` | 400 |
 | Logical Reasoning | `API_LOGIC` | `gemma-4-31b-it` | 150 |
 | Code Generation | `API_CODE` | `kimi-k2p7-code` | 500 |
@@ -80,7 +80,7 @@ This reduces input + output tokens on every remote call.
 │   └── watchdog.py       # Daemon thread: fires at 570s, flushes partial output
 │
 ├── engines/
-│   ├── local_slm.py      # llama-cpp-python wrapper (Qwen2.5-1.5B Q4_K_M)
+│   ├── local_slm.py      # llama-cpp-python wrapper (Qwen2.5-3B Q4_K_M)
 │   └── remote_llm.py     # Async Fireworks API client (aiohttp + tenacity retry)
 │
 ├── handlers/             # One handler file per capability domain
@@ -138,7 +138,7 @@ Script này tự động:
 - Cài tất cả dependencies từ `requirements.txt`
 - Cài `llama-cpp-python` (CPU wheel, không cần C++ compiler)
 - Pre-cache `all-MiniLM-L6-v2` (~90 MB)
-- Download `Qwen2.5-1.5B Q4_K_M` GGUF (~1 GB)
+- Download `Qwen2.5-3B Q4_K_M` GGUF (~2 GB)
 - Tạo `.env` từ `.env.example`
 
 Sau đó điền API key vào `.env`:
@@ -229,7 +229,7 @@ docker push <your-dockerhub-username>/develarper-agent:latest
 | `FIREWORKS_API_KEY` | Yes (grading) | API key — injected by harness lúc chấm |
 | `FIREWORKS_BASE_URL` | Yes (grading) | Proxy URL cho token counting — harness inject |
 | `ALLOWED_MODELS` | Yes (grading) | Comma-separated model IDs — harness inject |
-| `LOCAL_MODEL_PATH` | Optional | Đường dẫn GGUF (default: `models/qwen2.5-1.5b-instruct-q4_k_m.gguf`) |
+| `LOCAL_MODEL_PATH` | Optional | Đường dẫn GGUF (default: `models/qwen2.5-3b-instruct-q4_k_m.gguf`) |
 | `LOCAL_N_GPU_LAYERS` | Optional | GPU layers (`0` = CPU-only, `-1` = auto Metal trên Mac) |
 | `LOCAL_N_THREADS` | Optional | CPU threads (default: `2`) |
 | `LOCAL_N_CTX` | Optional | Context window size (default: `2048`) |
@@ -244,7 +244,7 @@ docker push <your-dockerhub-username>/develarper-agent:latest
 
 | Constraint | Limit | Approach |
 |---|---|---|
-| RAM | 4 GB | Qwen2.5 ~1 GB + MiniLM ~200 MB ≈ ~1.5 GB total ✅ |
+| RAM | 4 GB | Qwen2.5 ~2 GB + MiniLM ~200 MB ≈ ~2.2 GB total ✅ |
 | CPUs | 2 vCPUs | `n_threads=2` trong llama.cpp |
 | Image size | 10 GB compressed | ~2–3 GB estimated ✅ |
 | Runtime | 10 phút | Watchdog fires at 570s, flush partial results |
@@ -271,7 +271,7 @@ Subject to: accuracy ≥ 80% (binary gate — phải pass trước)
 
 - **Python version**: 3.10 (Docker) / 3.11+ (host dev)
 - **Classifier**: `all-MiniLM-L6-v2` (SentenceTransformer) + PyTorch MLP head — trained locally on 3,235 consolidated tasks (including test suite prompts)
-- **Local SLM**: `Qwen2.5-1.5B-Instruct Q4_K_M` via `llama-cpp-python`
+- **Local SLM**: `Qwen2.5-3B-Instruct Q4_K_M` via `llama-cpp-python`
 - **Linting**: `ruff check .`
 - **Type checking**: `mypy .`
 - **Pre-commit**: `pre-commit run --all-files`
