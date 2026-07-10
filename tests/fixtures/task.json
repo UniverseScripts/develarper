@@ -16173,5 +16173,2190 @@
     "task_id": "task-3235",
     "prompt": "Write a story about a boy who has 3 apples and 2 oranges",
     "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-050",
+    "prompt": "Explain the historical significance of the Battle of Waterloo which took place in the year 1815. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-021",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Edward Elric recently joined SpaceX in Toronto.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-04-038",
+    "prompt": "Provide a concise summary of the main points in 3 sentences max.\n\nText:\nMachine learning is a subset of artificial intelligence focused on building systems that learn from data, identify patterns, and make decisions with minimal human intervention. Unlike traditional software which relies on hardcoded rules, machine learning algorithms use statistical techniques to improve their performance over time as they are exposed to more data. Key subfields include supervised learning, where models are trained on labeled data, and unsupervised learning, which finds hidden patterns in unlabeled datasets. Deep learning, a specialized branch of machine learning, utilizes multi-layered artificial neural networks to process complex data types like images, audio, and natural language, enabling advanced applications such as autonomous driving and medical diagnosis.",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-04-072",
+    "prompt": "Write a detailed executive summary of the following document. Your summary should highlight the background, the main challenges, and the proposed solutions:\n\nText:\nThe global economy is facing unprecedented challenges due to shifting trade routes, inflation, supply chain disruptions, and changing geopolitical alliances. In response to recent crises, many companies are relocating manufacturing facilities closer to their home markets, a process known as nearshoring. While nearshoring reduces transportation costs and supply chain risks, it often leads to higher labor costs and initial setup expenses. At the same time, central banks are balancing interest rate adjustments to curb inflation without triggering deep recessions. These economic shifts are reshaping global markets, affecting international trade agreements, and influencing currency valuations across major economies.\n\nMachine learning is a subset of artificial intelligence focused on building systems that learn from data, identify patterns, and make decisions with minimal human intervention. Unlike traditional software which relies on hardcoded rules, machine learning algorithms use statistical techniques to improve their performance over time as they are exposed to more data. Key subfields include supervised learning, where models are trained on labeled data, and unsupervised learning, which finds hidden patterns in unlabeled datasets. Deep learning, a specialized branch of machine learning, utilizes multi-layered artificial neural networks to process complex data types like images, audio, and natural language, enabling advanced applications such as autonomous driving and medical diagnosis.\n\nThe development of mRNA vaccines has revolutionized preventative medicine and established a new paradigm for rapid vaccine development. Unlike traditional vaccines that introduce weakened or inactivated pathogens to stimulate an immune response, mRNA vaccines deliver genetic instructions for cells to produce a harmless viral protein, known as the spike protein. The human immune system recognizes this protein as foreign, triggers an immune response, and produces antibodies without causing disease. This technology allows vaccines to be designed and manufactured extremely rapidly once a pathogen's genetic sequence is known, which was crucial during the global pandemic and holds promise for future cancer therapies.\n\nThe history of space exploration began in the mid-20th century, sparked by the Cold War rivalry between the United States and the Soviet Union. The launch of Sputnik 1, the first artificial satellite, in 1957 marked the beginning of the Space Age. This was followed by Yuri Gagarin becoming the first human in space in 1961, and the historic Apollo 11 moon landing in 1969. In the decades since, space exploration has transitioned from geopolitical competition to international cooperation, exemplified by the International Space Station. Today, private aerospace companies are playing an increasingly dominant role, launching commercial satellites, developing reusable rockets, and planning future crewed missions to Mars.",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-082",
+    "prompt": "Analyze the debate or research surrounding holographic principle in string theory. What are the conflicting theories, key evidence, and future perspectives? (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-035",
+    "prompt": "Classify the sentiment of this text: 'Very laggy and constantly crashes. I lost my unsaved data twice. I want a refund. I'm returning it.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-03-042",
+    "prompt": "Classify the sentiment of this text: 'Average quality. It is not terrible, but it is not great either. Just okay for the price. It matches my expectations.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-08-088",
+    "prompt": "Write a highly optimized, fully documented Python function or class for: Write a Python function to find the longest common subsequence (LCS) between two strings using dynamic programming.. Handle edge cases, type hints, and write clear code. Return ONLY raw code without any extra explanation or wrapper text.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-08-083",
+    "prompt": "Write a highly optimized, fully documented Python function or class for: Write a Python class for a thread-safe Singleton pattern using a metaclass or class decorator.. Handle edge cases, type hints, and write clear code. Return ONLY raw code without any extra explanation or wrapper text.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-01-003",
+    "prompt": "Define the basic concept of 'mitosis' in a single sentence. Keep it simple. (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-04-076",
+    "prompt": "Write a detailed executive summary of the following document. Your summary should highlight the background, the main challenges, and the proposed solutions:\n\nText:\nRenewable energy technologies like solar, wind, and hydro are expanding rapidly worldwide as nations seek to reduce carbon emissions and combat climate change. Solar photovoltaic panels convert sunlight directly into electricity, while wind turbines harness the kinetic energy of air currents. Hydropower utilizes flowing water to spin generators, providing a stable baseload supply of clean electricity. Together, these technologies are transforming the global grid, reducing dependence on fossil fuels, and driving down the cost of clean energy. However, challenges like grid integration, battery storage capacity, and geographic variability remain critical barriers that must be addressed to achieve a fully sustainable energy future.\n\nThe global economy is facing unprecedented challenges due to shifting trade routes, inflation, supply chain disruptions, and changing geopolitical alliances. In response to recent crises, many companies are relocating manufacturing facilities closer to their home markets, a process known as nearshoring. While nearshoring reduces transportation costs and supply chain risks, it often leads to higher labor costs and initial setup expenses. At the same time, central banks are balancing interest rate adjustments to curb inflation without triggering deep recessions. These economic shifts are reshaping global markets, affecting international trade agreements, and influencing currency valuations across major economies.\n\nMachine learning is a subset of artificial intelligence focused on building systems that learn from data, identify patterns, and make decisions with minimal human intervention. Unlike traditional software which relies on hardcoded rules, machine learning algorithms use statistical techniques to improve their performance over time as they are exposed to more data. Key subfields include supervised learning, where models are trained on labeled data, and unsupervised learning, which finds hidden patterns in unlabeled datasets. Deep learning, a specialized branch of machine learning, utilizes multi-layered artificial neural networks to process complex data types like images, audio, and natural language, enabling advanced applications such as autonomous driving and medical diagnosis.\n\nThe development of mRNA vaccines has revolutionized preventative medicine and established a new paradigm for rapid vaccine development. Unlike traditional vaccines that introduce weakened or inactivated pathogens to stimulate an immune response, mRNA vaccines deliver genetic instructions for cells to produce a harmless viral protein, known as the spike protein. The human immune system recognizes this protein as foreign, triggers an immune response, and produces antibodies without causing disease. This technology allows vaccines to be designed and manufactured extremely rapidly once a pathogen's genetic sequence is known, which was crucial during the global pandemic and holds promise for future cancer therapies.",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-032",
+    "prompt": "Classify the sentiment of this text: 'Extremely disappointed. The material feels very cheap, and it looks nothing like the promotional pictures.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-07-077",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Michael Scott, Nancy Drew, and Oliver Twist. Michael Scott says: 'At least one of us is a knave.' Nancy Drew says: 'Michael Scott is lying.' Oliver Twist remains silent. Determine the identities of Michael Scott, Nancy Drew, and Oliver Twist. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-01-088",
+    "prompt": "Analyze the debate or research surrounding Bell's theorem and local realism. What are the conflicting theories, key evidence, and future perspectives? (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-014",
+    "prompt": "Classify the sentiment of this text: 'Do not buy this! It is a waste of money. It lacks basic features and is very difficult to use.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-03-067",
+    "prompt": "Classify the sentiment of this text: 'The camera captures beautiful images in daylight, but low light performance is terrible, and the software updates are extremely slow.'. What is the emotion expressed here?",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-08-080",
+    "prompt": "Write a highly optimized, fully documented Python function or class for: Write a Python class for a Trie (prefix tree) supporting insert, search, and startsWith operations. Handle unicode characters correctly.. Handle edge cases, type hints, and write clear code. Return ONLY raw code without any extra explanation or wrapper text.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-03-062",
+    "prompt": "Classify the sentiment of this text: 'Extremely disappointed. The material feels very cheap, and it looks nothing like the promotional pictures. I'm returning it.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-04-002",
+    "prompt": "Summarize this text in exactly one sentence.\n\nText:\nThe global economy is facing unprecedented challenges due to shifting trade routes, inflation, supply chain disruptions, and changing geopolitical alliances. In response to recent crises, many compani...",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-08-100",
+    "prompt": "Write a highly optimized, fully documented Python function or class for: Write a Python function that implements a thread-safe producer-consumer queue using the threading module, handling queue capacity constraints.. Handle edge cases, type hints, and write clear code. Return ONLY raw code without any extra explanation or wrapper text.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-05-079",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Oliver Twist met with the board of Intel Corporation in Austin to discuss a strategic partnership. Later, Peter Parker and Alice Smith from AMD arrived in Boston to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-034",
+    "prompt": "Explain the primary function of the human pancreas and list three common health issues related to it. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-07-014",
+    "prompt": "Three friends, Nancy Drew, Oliver Twist, and Peter Parker, each own a different pet: cat, dog, bird. Nancy Drew does not own the bird. Oliver Twist owns the dog. Who owns the cat? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-03-070",
+    "prompt": "Classify the sentiment of this text: 'The food was delicious and the staff was friendly, but the wait times were ridiculous and we had to wait an hour for our table despite reservations.'. What is the emotion expressed here?",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-05-066",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Bob Jones will give a lecture at AMD in Boston, while Charlie Brown will present at NVIDIA in Seattle.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-072",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Hannah Abbott, Ian Malcolm, and Julia Roberts. Hannah Abbott says: 'We are all knaves.' Ian Malcolm says: 'Exactly one of us is a knight.' Determine who is a knight and who is a knave. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-02-094",
+    "prompt": "A train leaves Station A traveling at 53 mph. 4 hours later, another train leaves Station A traveling in the same direction at 85 mph. How long will it take the second train to overtake the first? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-005",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Edward Elric recently joined Amazon Web Services in Berlin.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-097",
+    "prompt": "Explain the theory and mechanics of quantum entanglement. Discuss its scientific basis, challenges, and implications for modern technology. (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-023",
+    "prompt": "What chemical element has the symbol Ag, and what is its atomic number? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-061",
+    "prompt": "Explain the primary function of the human kidneys and list three common health issues related to it. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-049",
+    "prompt": "A store has 196 items. It sells 10% on Monday and 75 more on Tuesday. How many items remain? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-057",
+    "prompt": "Classify the sentiment of this text: 'Nothing special. It performs its basic functions. The price is reasonable for what it offers. It matches my expectations.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-04-020",
+    "prompt": "Summarize this text in exactly one sentence.\n\nText:\nThe history of space exploration began in the mid-20th century, sparked by the Cold War rivalry between the United States and the Soviet Union. The launch of Sputnik 1, the first artificial satellite,...",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-08-075",
+    "prompt": "Write a highly optimized, fully documented Python function or class for: Write a Python function to solve the knapsack problem given weights, values, and maximum capacity.. Handle edge cases, type hints, and write clear code. Return ONLY raw code without any extra explanation or wrapper text.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-07-098",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Bob Jones, Charlie Brown, and Diana Prince. Bob Jones says: 'We are all knaves.' Charlie Brown says: 'Exactly one of us is a knight.' Determine who is a knight and who is a knave. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-07-054",
+    "prompt": "A drawer contains 7 black socks and 15 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-02-088",
+    "prompt": "A train leaves Station A traveling at 57 mph. 4 hours later, another train leaves Station A traveling in the same direction at 74 mph. How long will it take the second train to overtake the first? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-018",
+    "prompt": "Calculate the exact value: 62 - 57.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-049",
+    "prompt": "Explain the primary function of the human spleen and list three common health issues related to it. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-083",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Charlie Brown met with the board of Oracle in Rome to discuss a strategic partnership. Later, Diana Prince and Edward Elric from Salesforce arrived in Beijing to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-04-062",
+    "prompt": "Provide a concise summary of the main points in 3 sentences max.\n\nText:\nThe global economy is facing unprecedented challenges due to shifting trade routes, inflation, supply chain disruptions, and changing geopolitical alliances. In response to recent crises, many companies are relocating manufacturing facilities closer to their home markets, a process known as nearshoring. While nearshoring reduces transportation costs and supply chain risks, it often leads to higher labor costs and initial setup expenses. At the same time, central banks are balancing interest rate adjustments to curb inflation without triggering deep recessions. These economic shifts are reshaping global markets, affecting international trade agreements, and influencing currency valuations across major economies.",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-018",
+    "prompt": "Define the basic concept of 'friction' in a single sentence. Keep it simple. (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-040",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Hannah Abbott will give a lecture at IBM Research in Chicago, while Ian Malcolm will present at Oracle in Rome.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-008",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Hannah Abbott visited the head office of Netflix Inc. in San Francisco last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-04-014",
+    "prompt": "Summarize this text in exactly one sentence.\n\nText:\nThe development of mRNA vaccines has revolutionized preventative medicine and established a new paradigm for rapid vaccine development. Unlike traditional vaccines that introduce weakened or inactivat...",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-08-099",
+    "prompt": "Write a highly optimized, fully documented Python function or class for: Write a Python class implementing a Least Recently Used (LRU) Cache with get and put operations in O(1) time complexity.. Handle edge cases, type hints, and write clear code. Return ONLY raw code without any extra explanation or wrapper text.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-01-013",
+    "prompt": "What is the capital of Germany, and what is its official currency? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-008",
+    "prompt": "Calculate the exact value: 129 * 268.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-048",
+    "prompt": "A drawer contains 8 black socks and 7 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-07-016",
+    "prompt": "Three friends, Peter Parker, Alice Smith, and Bob Jones, each own a different pet: cat, dog, bird. Peter Parker does not own the bird. Alice Smith owns the dog. Who owns the cat? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-04-031",
+    "prompt": "Summarize this text in exactly one sentence.\n\nText:\nRenewable energy technologies like solar, wind, and hydro are expanding rapidly worldwide as nations seek to reduce carbon emissions and combat climate change. Solar photovoltaic panels convert sunlig...",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-07-076",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Laura Croft, Michael Scott, and Nancy Drew. Laura Croft says: 'We are all knaves.' Michael Scott says: 'Exactly one of us is a knight.' Determine who is a knight and who is a knave. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-06-090",
+    "prompt": "Identify the logical flaws and edge case failures in this function. Return ONLY the corrected, clean implementation of is_prime:\ndef is_prime(n):\n    if n <= 1: return False\n    if n == 2 or n == 3: return True\n    if n % 2 == 0 or n % 3 == 0: return False\n    for i in range(5, int(n**0.5) + 1, 6):\n        if n % i == 0 or n % (i + 1) == 0:\n            return False\n    return True\n\nReturn ONLY the corrected code without explanation.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-02-087",
+    "prompt": "Solve the following problem: A factory produces 16 units per hour. After 8 hours, 10% of the units are inspected. Of those, 2% are defective. How many non-defective inspected units are there? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-095",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Oliver Twist, Peter Parker, and Alice Smith. Oliver Twist says: 'At least one of us is a knave.' Peter Parker says: 'Oliver Twist is lying.' Alice Smith remains silent. Determine the identities of Oliver Twist, Peter Parker, and Alice Smith. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-01-038",
+    "prompt": "Explain the historical significance of the start of the French Revolution which took place in the year 1789. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-059",
+    "prompt": "Classify the sentiment of this text: 'Horrible battery life. It barely lasts two hours on a full charge, even with minimal usage. I'm returning it.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-05-007",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: George Clark recently joined SpaceX in Toronto.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-062",
+    "prompt": "A drawer contains 12 black socks and 15 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-02-054",
+    "prompt": "Calculate the exact value: ((666 / 2) / 17) * 6.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-001",
+    "prompt": "Calculate the exact value: 337 + 67.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-010",
+    "prompt": "Three friends, Julia Roberts, Kevin Bacon, and Laura Croft, each own a different pet: cat, dog, bird. Julia Roberts does not own the bird. Kevin Bacon owns the dog. Who owns the cat? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-07-035",
+    "prompt": "Five people (Charlie Brown, Diana Prince, Edward Elric, Fiona Gallagher, George Clark) are in a race. Charlie Brown finished before Diana Prince but after Edward Elric. Fiona Gallagher finished before George Clark but after Diana Prince. Who finished last? What is the logical solution?",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-055",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. George Clark will give a lecture at Oracle in Rome, while Hannah Abbott will present at Salesforce in Beijing.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-04-045",
+    "prompt": "Provide a concise summary of the main points in 3 sentences max.\n\nText:\nThe history of space exploration began in the mid-20th century, sparked by the Cold War rivalry between the United States and the Soviet Union. The launch of Sputnik 1, the first artificial satellite, in 1957 marked the beginning of the Space Age. This was followed by Yuri Gagarin becoming the first human in space in 1961, and the historic Apollo 11 moon landing in 1969. In the decades since, space exploration has transitioned from geopolitical competition to international cooperation, exemplified by the International Space Station. Today, private aerospace companies are playing an increasingly dominant role, launching commercial satellites, developing reusable rockets, and planning future crewed missions to Mars.",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-002",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Bob Jones visited the head office of Microsoft Corp in London last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-067",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Charlie Brown, Diana Prince, and Edward Elric. Charlie Brown says: 'At least one of us is a knave.' Diana Prince says: 'Charlie Brown is lying.' Edward Elric remains silent. Determine the identities of Charlie Brown, Diana Prince, and Edward Elric. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-08-030",
+    "prompt": "Write code to implement: Write a Python function that returns the second-largest number in a list, handling duplicates correctly.. Make sure to handle edge cases.\n\nReturn ONLY raw code.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-02-069",
+    "prompt": "Solve the following problem: A factory produces 23 units per hour. After 8 hours, 25% of the units are inspected. Of those, 5% are defective. How many non-defective inspected units are there? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-063",
+    "prompt": "Provide a brief overview of 'overfitting', describing how it works and its main applications. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-093",
+    "prompt": "Explain the theory and mechanics of gauge theories in particle physics. Discuss its scientific basis, challenges, and implications for modern technology. (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-043",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Kevin Bacon will give a lecture at Google LLC in New York City, while Laura Croft will present at Microsoft Corp in London.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-03-053",
+    "prompt": "Classify the sentiment of this text: 'Terrible customer service. I spent 3 hours on hold and they still couldn't resolve my problem. I'm returning it.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-07-069",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Edward Elric, Fiona Gallagher, and George Clark. Edward Elric says: 'At least one of us is a knave.' Fiona Gallagher says: 'Edward Elric is lying.' George Clark remains silent. Determine the identities of Edward Elric, Fiona Gallagher, and George Clark. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-01-035",
+    "prompt": "Explain the historical significance of the fall of Constantinople which took place in the year 1453. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-057",
+    "prompt": "Provide a brief overview of 'microeconomics', describing how it works and its main applications. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-081",
+    "prompt": "Explain the theory and mechanics of topological insulators. Discuss its scientific basis, challenges, and implications for modern technology. (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-022",
+    "prompt": "Calculate the exact value: 482 - 73.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-06-041",
+    "prompt": "This code has an issue: it fails on certain inputs. Correct it:\ndef factorial(n):\n    if n < 0:\n        return 1\n    result = 1\n    for i in range(1, n):\n        result *= i\n    return result\n\nReturn ONLY the corrected code without explanation.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-06-060",
+    "prompt": "This code has an issue: it fails on certain inputs. Correct it:\ndef is_prime(n):\n    if n <= 1: return False\n    if n == 2: return True\n    for i in range(2, int(n**0.5)):\n        if n % i == 0:\n            return False\n    return True\n\nReturn ONLY the corrected code without explanation.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-01-067",
+    "prompt": "Explain the theory and mechanics of non-equilibrium thermodynamics. Discuss its scientific basis, challenges, and implications for modern technology. (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-08-063",
+    "prompt": "Develop a clean, efficient Python solution: Write a Python function that implements a simple matrix transposition for a 2D list.\n\nReturn ONLY raw code.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-05-094",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Nancy Drew met with the board of AMD in Boston to discuss a strategic partnership. Later, Oliver Twist and Peter Parker from NVIDIA arrived in Seattle to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-048",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Peter Parker will give a lecture at Meta Platforms in Sydney, while Alice Smith will present at SpaceX in Toronto.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-087",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, George Clark, Hannah Abbott, and Ian Malcolm. George Clark says: 'At least one of us is a knave.' Hannah Abbott says: 'George Clark is lying.' Ian Malcolm remains silent. Determine the identities of George Clark, Hannah Abbott, and Ian Malcolm. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-02-058",
+    "prompt": "A store has 409 items. It sells 10% on Monday and 75 more on Tuesday. How many items remain? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-063",
+    "prompt": "Five people (Oliver Twist, Peter Parker, Alice Smith, Bob Jones, Charlie Brown) are in a race. Oliver Twist finished before Peter Parker but after Alice Smith. Bob Jones finished before Charlie Brown but after Peter Parker. Who finished last? What is the logical solution?",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-092",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Laura Croft met with the board of Netflix Inc. in San Francisco to discuss a strategic partnership. Later, Michael Scott and Nancy Drew from Intel Corporation arrived in Austin to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-081",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Alice Smith met with the board of NVIDIA in Seattle to discuss a strategic partnership. Later, Bob Jones and Charlie Brown from IBM Research arrived in Chicago to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-006",
+    "prompt": "Three friends, Fiona Gallagher, George Clark, and Hannah Abbott, each own a different pet: cat, dog, bird. Fiona Gallagher does not own the bird. George Clark owns the dog. Who owns the cat? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-073",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Ian Malcolm met with the board of Apple Inc. in Tokyo to discuss a strategic partnership. Later, Julia Roberts and Kevin Bacon from Tesla Motors arrived in Paris to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-094",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Nancy Drew, Oliver Twist, and Peter Parker. Nancy Drew says: 'We are all knaves.' Oliver Twist says: 'Exactly one of us is a knight.' Determine who is a knight and who is a knave. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-01-033",
+    "prompt": "Define the basic concept of 'acid rain' in a single sentence. Keep it simple. (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-001",
+    "prompt": "Classify the sentiment of this text: 'This product is amazing! It works exactly as advertised and has saved me so much time. Highly recommend!'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-01-012",
+    "prompt": "Define the basic concept of 'earthquake' in a single sentence. Keep it simple. (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-065",
+    "prompt": "An investor deposits $2290 in a savings account with 3% annual interest compounded annually. What will the balance be after 10 years? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-005",
+    "prompt": "What chemical element has the symbol C, and what is its atomic number? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-027",
+    "prompt": "Classify the sentiment of this text: 'Nothing special. It performs its basic functions. The price is reasonable for what it offers.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-03-081",
+    "prompt": "Classify the sentiment of this text: 'The battery life is absolutely incredible, lasting over two days of heavy use, but the screen scratches too easily and the case feels cheap.'. What is the emotion expressed here?",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-071",
+    "prompt": "If the price of an item increases from $116 to $431, what is the percentage increase? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-089",
+    "prompt": "Explain the theory and mechanics of dark energy and cosmic expansion models. Discuss its scientific basis, challenges, and implications for modern technology. (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-06-049",
+    "prompt": "This code has an issue: it fails on certain inputs. Correct it:\ndef binary_search(arr, target):\n    low, high = 0, len(arr) - 1\n    while low <= high:\n        mid = (low + high) / 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1\n\nReturn ONLY the corrected code without explanation.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-05-058",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Julia Roberts will give a lecture at Microsoft Corp in London, while Kevin Bacon will present at Apple Inc. in Tokyo.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-08-027",
+    "prompt": "Write code to implement: Write a Python function to check if a number is even or odd.. Make sure to handle edge cases.\n\nReturn ONLY raw code.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-03-083",
+    "prompt": "Classify the sentiment of this text: 'I love the sound quality of these headphones, however the earcups are very uncomfortable for long sessions and they frequently drop bluetooth connection.'. What is the emotion expressed here?",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-05-014",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Nancy Drew visited the head office of Salesforce in Beijing last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-090",
+    "prompt": "Analyze the debate or research surrounding epigenetic reprogramming in stem cells. What are the conflicting theories, key evidence, and future perspectives? (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-047",
+    "prompt": "An investor deposits $10560 in a savings account with 6% annual interest compounded annually. What will the balance be after 8 years? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-020",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Diana Prince visited the head office of Meta Platforms in Sydney last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-047",
+    "prompt": "Explain the historical significance of the discovery of the Americas by Columbus which took place in the year 1492. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-07-018",
+    "prompt": "Three friends, Bob Jones, Charlie Brown, and Diana Prince, each own a different pet: cat, dog, bird. Bob Jones does not own the bird. Charlie Brown owns the dog. Who owns the cat? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-039",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. George Clark will give a lecture at NVIDIA in Seattle, while Hannah Abbott will present at IBM Research in Chicago.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-04-098",
+    "prompt": "Write a detailed executive summary of the following document. Your summary should highlight the background, the main challenges, and the proposed solutions:\n\nText:\nMachine learning is a subset of artificial intelligence focused on building systems that learn from data, identify patterns, and make decisions with minimal human intervention. Unlike traditional software which relies on hardcoded rules, machine learning algorithms use statistical techniques to improve their performance over time as they are exposed to more data. Key subfields include supervised learning, where models are trained on labeled data, and unsupervised learning, which finds hidden patterns in unlabeled datasets. Deep learning, a specialized branch of machine learning, utilizes multi-layered artificial neural networks to process complex data types like images, audio, and natural language, enabling advanced applications such as autonomous driving and medical diagnosis.\n\nThe development of mRNA vaccines has revolutionized preventative medicine and established a new paradigm for rapid vaccine development. Unlike traditional vaccines that introduce weakened or inactivated pathogens to stimulate an immune response, mRNA vaccines deliver genetic instructions for cells to produce a harmless viral protein, known as the spike protein. The human immune system recognizes this protein as foreign, triggers an immune response, and produces antibodies without causing disease. This technology allows vaccines to be designed and manufactured extremely rapidly once a pathogen's genetic sequence is known, which was crucial during the global pandemic and holds promise for future cancer therapies.\n\nThe history of space exploration began in the mid-20th century, sparked by the Cold War rivalry between the United States and the Soviet Union. The launch of Sputnik 1, the first artificial satellite, in 1957 marked the beginning of the Space Age. This was followed by Yuri Gagarin becoming the first human in space in 1961, and the historic Apollo 11 moon landing in 1969. In the decades since, space exploration has transitioned from geopolitical competition to international cooperation, exemplified by the International Space Station. Today, private aerospace companies are playing an increasingly dominant role, launching commercial satellites, developing reusable rockets, and planning future crewed missions to Mars.\n\nRenewable energy technologies like solar, wind, and hydro are expanding rapidly worldwide as nations seek to reduce carbon emissions and combat climate change. Solar photovoltaic panels convert sunlight directly into electricity, while wind turbines harness the kinetic energy of air currents. Hydropower utilizes flowing water to spin generators, providing a stable baseload supply of clean electricity. Together, these technologies are transforming the global grid, reducing dependence on fossil fuels, and driving down the cost of clean energy. However, challenges like grid integration, battery storage capacity, and geographic variability remain critical barriers that must be addressed to achieve a fully sustainable energy future.",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-072",
+    "prompt": "Solve the following problem: A factory produces 17 units per hour. After 8 hours, 10% of the units are inspected. Of those, 2% are defective. How many non-defective inspected units are there? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-088",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Hannah Abbott met with the board of Tesla Motors in Paris to discuss a strategic partnership. Later, Ian Malcolm and Julia Roberts from Amazon Web Services arrived in Berlin to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-08-040",
+    "prompt": "Develop a clean, efficient Python solution: Write a Python function to parse a CSV string and convert it to a list of dictionaries.\n\nReturn ONLY raw code.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-07-064",
+    "prompt": "A drawer contains 15 black socks and 14 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-029",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Michael Scott recently joined Google LLC in New York City.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-03-007",
+    "prompt": "Classify the sentiment of this text: 'Works flawlessly. I haven't encountered a single bug or issue. Highly recommended to everyone.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-05-032",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Peter Parker visited the head office of Tesla Motors in Paris last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-004",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Diana Prince visited the head office of Tesla Motors in Paris last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-001",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Alice Smith recently joined Google LLC in New York City.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-004",
+    "prompt": "Calculate the exact value: 62 * 356.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-063",
+    "prompt": "Classify the sentiment of this text: 'The delivery took a normal amount of time. The packaging was adequate, and the item arrived intact. It matches my expectations.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-020",
+    "prompt": "Calculate the exact value: 319 + 145.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-032",
+    "prompt": "What chemical element has the symbol Be, and what is its atomic number? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-091",
+    "prompt": "A train leaves Station A traveling at 54 mph. 1 hours later, another train leaves Station A traveling in the same direction at 71 mph. How long will it take the second train to overtake the first? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-06-098",
+    "prompt": "Identify the logical flaws and edge case failures in this function. Return ONLY the corrected, clean implementation of factorial:\ndef factorial(n):\n    memo = {}\n    if n in memo: return memo[n]\n    if n == 0 or n == 1: return 1\n    memo[n] = n * factorial(n - 1)\n    return memo[n]\n\nReturn ONLY the corrected code without explanation.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-03-013",
+    "prompt": "Classify the sentiment of this text: 'Best purchase of the year. The build quality is top-notch, feels very premium and solid.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-04-080",
+    "prompt": "Write a detailed executive summary of the following document. Your summary should highlight the background, the main challenges, and the proposed solutions:\n\nText:\nThe history of space exploration began in the mid-20th century, sparked by the Cold War rivalry between the United States and the Soviet Union. The launch of Sputnik 1, the first artificial satellite, in 1957 marked the beginning of the Space Age. This was followed by Yuri Gagarin becoming the first human in space in 1961, and the historic Apollo 11 moon landing in 1969. In the decades since, space exploration has transitioned from geopolitical competition to international cooperation, exemplified by the International Space Station. Today, private aerospace companies are playing an increasingly dominant role, launching commercial satellites, developing reusable rockets, and planning future crewed missions to Mars.\n\nRenewable energy technologies like solar, wind, and hydro are expanding rapidly worldwide as nations seek to reduce carbon emissions and combat climate change. Solar photovoltaic panels convert sunlight directly into electricity, while wind turbines harness the kinetic energy of air currents. Hydropower utilizes flowing water to spin generators, providing a stable baseload supply of clean electricity. Together, these technologies are transforming the global grid, reducing dependence on fossil fuels, and driving down the cost of clean energy. However, challenges like grid integration, battery storage capacity, and geographic variability remain critical barriers that must be addressed to achieve a fully sustainable energy future.\n\nThe global economy is facing unprecedented challenges due to shifting trade routes, inflation, supply chain disruptions, and changing geopolitical alliances. In response to recent crises, many companies are relocating manufacturing facilities closer to their home markets, a process known as nearshoring. While nearshoring reduces transportation costs and supply chain risks, it often leads to higher labor costs and initial setup expenses. At the same time, central banks are balancing interest rate adjustments to curb inflation without triggering deep recessions. These economic shifts are reshaping global markets, affecting international trade agreements, and influencing currency valuations across major economies.\n\nMachine learning is a subset of artificial intelligence focused on building systems that learn from data, identify patterns, and make decisions with minimal human intervention. Unlike traditional software which relies on hardcoded rules, machine learning algorithms use statistical techniques to improve their performance over time as they are exposed to more data. Key subfields include supervised learning, where models are trained on labeled data, and unsupervised learning, which finds hidden patterns in unlabeled datasets. Deep learning, a specialized branch of machine learning, utilizes multi-layered artificial neural networks to process complex data types like images, audio, and natural language, enabling advanced applications such as autonomous driving and medical diagnosis.",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-017",
+    "prompt": "Classify the sentiment of this text: 'Very loud, runs hot, and consumes a massive amount of power. I would not buy this again.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-08-014",
+    "prompt": "Write code to implement: Write a Python function to calculate the average of a list of floats, handling empty list safely.. Make sure to handle edge cases.\n\nReturn ONLY raw code.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-06-088",
+    "prompt": "Identify the logical flaws and edge case failures in this function. Return ONLY the corrected, clean implementation of binary_search:\ndef binary_search(arr, target):\n    low, high = 0, len(arr) - 1\n    while low < high:\n        mid = (low + high) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid\n        else:\n            high = mid\n    return -1\n\nReturn ONLY the corrected code without explanation.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-08-033",
+    "prompt": "Write code to implement: Write a Python function to find the maximum element in a list of numbers.. Make sure to handle edge cases.\n\nReturn ONLY raw code.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-05-096",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Peter Parker met with the board of IBM Research in Chicago to discuss a strategic partnership. Later, Alice Smith and Bob Jones from Oracle arrived in Rome to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-044",
+    "prompt": "A drawer contains 8 black socks and 6 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-01-051",
+    "prompt": "Provide a brief overview of 'semiconductors', describing how it works and its main applications. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-08-084",
+    "prompt": "Write a highly optimized, fully documented Python function or class for: Write a Python function to parse and evaluate basic mathematical expressions containing parentheses, addition, subtraction, multiplication, and division.. Handle edge cases, type hints, and write clear code. Return ONLY raw code without any extra explanation or wrapper text.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-04-069",
+    "prompt": "Write a detailed executive summary of the following document. Your summary should highlight the background, the main challenges, and the proposed solutions:\n\nText:\nThe development of mRNA vaccines has revolutionized preventative medicine and established a new paradigm for rapid vaccine development. Unlike traditional vaccines that introduce weakened or inactivated pathogens to stimulate an immune response, mRNA vaccines deliver genetic instructions for cells to produce a harmless viral protein, known as the spike protein. The human immune system recognizes this protein as foreign, triggers an immune response, and produces antibodies without causing disease. This technology allows vaccines to be designed and manufactured extremely rapidly once a pathogen's genetic sequence is known, which was crucial during the global pandemic and holds promise for future cancer therapies.\n\nThe history of space exploration began in the mid-20th century, sparked by the Cold War rivalry between the United States and the Soviet Union. The launch of Sputnik 1, the first artificial satellite, in 1957 marked the beginning of the Space Age. This was followed by Yuri Gagarin becoming the first human in space in 1961, and the historic Apollo 11 moon landing in 1969. In the decades since, space exploration has transitioned from geopolitical competition to international cooperation, exemplified by the International Space Station. Today, private aerospace companies are playing an increasingly dominant role, launching commercial satellites, developing reusable rockets, and planning future crewed missions to Mars.\n\nRenewable energy technologies like solar, wind, and hydro are expanding rapidly worldwide as nations seek to reduce carbon emissions and combat climate change. Solar photovoltaic panels convert sunlight directly into electricity, while wind turbines harness the kinetic energy of air currents. Hydropower utilizes flowing water to spin generators, providing a stable baseload supply of clean electricity. Together, these technologies are transforming the global grid, reducing dependence on fossil fuels, and driving down the cost of clean energy. However, challenges like grid integration, battery storage capacity, and geographic variability remain critical barriers that must be addressed to achieve a fully sustainable energy future.\n\nThe global economy is facing unprecedented challenges due to shifting trade routes, inflation, supply chain disruptions, and changing geopolitical alliances. In response to recent crises, many companies are relocating manufacturing facilities closer to their home markets, a process known as nearshoring. While nearshoring reduces transportation costs and supply chain risks, it often leads to higher labor costs and initial setup expenses. At the same time, central banks are balancing interest rate adjustments to curb inflation without triggering deep recessions. These economic shifts are reshaping global markets, affecting international trade agreements, and influencing currency valuations across major economies.",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-092",
+    "prompt": "If the price of an item increases from $133 to $476, what is the percentage increase? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-047",
+    "prompt": "Classify the sentiment of this text: 'Very loud, runs hot, and consumes a massive amount of power. I would not buy this again. I'm returning it.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-04-036",
+    "prompt": "Provide a concise summary of the main points in 3 sentences max.\n\nText:\nRenewable energy technologies like solar, wind, and hydro are expanding rapidly worldwide as nations seek to reduce carbon emissions and combat climate change. Solar photovoltaic panels convert sunlight directly into electricity, while wind turbines harness the kinetic energy of air currents. Hydropower utilizes flowing water to spin generators, providing a stable baseload supply of clean electricity. Together, these technologies are transforming the global grid, reducing dependence on fossil fuels, and driving down the cost of clean energy. However, challenges like grid integration, battery storage capacity, and geographic variability remain critical barriers that must be addressed to achieve a fully sustainable energy future.",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-07-004",
+    "prompt": "Three friends, Diana Prince, Edward Elric, and Fiona Gallagher, each own a different pet: cat, dog, bird. Diana Prince does not own the bird. Edward Elric owns the dog. Who owns the cat? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-03-099",
+    "prompt": "Classify the sentiment of this text: 'It has a sleek appearance and starts up fast, but the keyboard is terrible and it runs extremely hot under moderate load.'. What is the emotion expressed here?",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-01-074",
+    "prompt": "Analyze the debate or research surrounding loop quantum gravity. What are the conflicting theories, key evidence, and future perspectives? (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-060",
+    "prompt": "Provide a brief overview of 'market equilibrium', describing how it works and its main applications. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-021",
+    "prompt": "Calculate the exact value: 383 * 245.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-052",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Diana Prince will give a lecture at AMD in Boston, while Edward Elric will present at NVIDIA in Seattle.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-038",
+    "prompt": "A drawer contains 6 black socks and 6 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-02-005",
+    "prompt": "Calculate the exact value: 466 + 289.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-008",
+    "prompt": "Three friends, Hannah Abbott, Ian Malcolm, and Julia Roberts, each own a different pet: cat, dog, bird. Hannah Abbott does not own the bird. Ian Malcolm owns the dog. Who owns the cat? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-03-006",
+    "prompt": "Classify the sentiment of this text: 'It works as expected, but the build quality is a bit plasticky. Moderate satisfaction.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-01-020",
+    "prompt": "What chemical element has the symbol Fe, and what is its atomic number? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-04-049",
+    "prompt": "Provide a concise summary of the main points in 3 sentences max.\n\nText:\nThe development of mRNA vaccines has revolutionized preventative medicine and established a new paradigm for rapid vaccine development. Unlike traditional vaccines that introduce weakened or inactivated pathogens to stimulate an immune response, mRNA vaccines deliver genetic instructions for cells to produce a harmless viral protein, known as the spike protein. The human immune system recognizes this protein as foreign, triggers an immune response, and produces antibodies without causing disease. This technology allows vaccines to be designed and manufactured extremely rapidly once a pathogen's genetic sequence is known, which was crucial during the global pandemic and holds promise for future cancer therapies.",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-035",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Charlie Brown will give a lecture at SpaceX in Toronto, while Diana Prince will present at Netflix Inc. in San Francisco.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-068",
+    "prompt": "Analyze the debate or research surrounding quantum electrodynamics. What are the conflicting theories, key evidence, and future perspectives? (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-061",
+    "prompt": "A store has 456 items. It sells 20% on Monday and 51 more on Tuesday. How many items remain? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-054",
+    "prompt": "Provide a brief overview of 'epigenetics', describing how it works and its main applications. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-064",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Peter Parker will give a lecture at Netflix Inc. in San Francisco, while Alice Smith will present at Intel Corporation in Austin.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-033",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Alice Smith recently joined Amazon Web Services in Berlin.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-03-064",
+    "prompt": "Classify the sentiment of this text: 'I was skeptical at first, but after using it for a week, I am completely sold. 5/5 stars! The design is nice too.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-07-089",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Ian Malcolm, Julia Roberts, and Kevin Bacon. Ian Malcolm says: 'At least one of us is a knave.' Julia Roberts says: 'Ian Malcolm is lying.' Kevin Bacon remains silent. Determine the identities of Ian Malcolm, Julia Roberts, and Kevin Bacon. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-03-021",
+    "prompt": "Classify the sentiment of this text: 'The product is decent. It does what it is supposed to do, but it doesn't have any standout features.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-01-077",
+    "prompt": "Explain the theory and mechanics of Gödel's incompleteness theorems. Discuss its scientific basis, challenges, and implications for modern technology. (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-016",
+    "prompt": "Calculate the exact value: 152 + 89.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-063",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Oliver Twist will give a lecture at SpaceX in Toronto, while Peter Parker will present at Netflix Inc. in San Francisco.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-099",
+    "prompt": "Solve the following problem: A factory produces 45 units per hour. After 12 hours, 10% of the units are inspected. Of those, 2% are defective. How many non-defective inspected units are there? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-058",
+    "prompt": "Explain the primary function of the human brain and list three common health issues related to it. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-003",
+    "prompt": "Classify the sentiment of this text: 'The delivery took a normal amount of time. The packaging was adequate, and the item arrived intact.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-056",
+    "prompt": "An investor deposits $5808 in a savings account with 6% annual interest compounded annually. What will the balance be after 5 years? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-096",
+    "prompt": "Solve the following problem: A factory produces 13 units per hour. After 7 hours, 20% of the units are inspected. Of those, 2% are defective. How many non-defective inspected units are there? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-031",
+    "prompt": "What is the capital of Belgium, and what is its official currency? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-011",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Kevin Bacon recently joined NVIDIA in Seattle.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-08-018",
+    "prompt": "Write code to implement: Write a Python function to reverse a string without using built-in reverse functions.. Make sure to handle edge cases.\n\nReturn ONLY raw code.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-05-012",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Laura Croft visited the head office of IBM Research in Chicago last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-041",
+    "prompt": "Five people (Ian Malcolm, Julia Roberts, Kevin Bacon, Laura Croft, Michael Scott) are in a race. Ian Malcolm finished before Julia Roberts but after Kevin Bacon. Laura Croft finished before Michael Scott but after Julia Roberts. Who finished last? What is the logical solution?",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-003",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Charlie Brown recently joined Apple Inc. in Tokyo.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-076",
+    "prompt": "A train leaves Station A traveling at 60 mph. 1 hours later, another train leaves Station A traveling in the same direction at 77 mph. How long will it take the second train to overtake the first? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-048",
+    "prompt": "Calculate the exact value: ((324 / 6) / 42) * 9.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-019",
+    "prompt": "What is the capital of Thailand, and what is its official currency? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-084",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Diana Prince met with the board of Salesforce in Beijing to discuss a strategic partnership. Later, Edward Elric and Fiona Gallagher from Google LLC arrived in New York City to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-017",
+    "prompt": "What chemical element has the symbol Ar, and what is its atomic number? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-011",
+    "prompt": "Classify the sentiment of this text: 'Absolute garbage. It broke within two days of normal use. Customer support refused to refund me.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-01-030",
+    "prompt": "Define the basic concept of 'biodiversity' in a single sentence. Keep it simple. (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-026",
+    "prompt": "Classify the sentiment of this text: 'Completely useless. It does not perform the function it was advertised to do. Extremely frustrating.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-03-046",
+    "prompt": "Classify the sentiment of this text: 'Fantastic value for money. Very affordable yet performs better than most high-end alternatives. The design is nice too.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-05-046",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Nancy Drew will give a lecture at Tesla Motors in Paris, while Oliver Twist will present at Amazon Web Services in Berlin.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-046",
+    "prompt": "A store has 532 items. It sells 30% on Monday and 47 more on Tuesday. How many items remain? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-056",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Hannah Abbott will give a lecture at Salesforce in Beijing, while Ian Malcolm will present at Google LLC in New York City.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-050",
+    "prompt": "An investor deposits $2796 in a savings account with 4% annual interest compounded annually. What will the balance be after 5 years? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-028",
+    "prompt": "What is the capital of Turkey, and what is its official currency? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-024",
+    "prompt": "Define the basic concept of 'wind' in a single sentence. Keep it simple. (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-041",
+    "prompt": "An investor deposits $6168 in a savings account with 6% annual interest compounded annually. What will the balance be after 7 years? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-008",
+    "prompt": "What chemical element has the symbol F, and what is its atomic number? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-085",
+    "prompt": "A train leaves Station A traveling at 41 mph. 1 hours later, another train leaves Station A traveling in the same direction at 71 mph. How long will it take the second train to overtake the first? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-017",
+    "prompt": "Calculate the exact value: 500 - 400.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-100",
+    "prompt": "Analyze the debate or research surrounding Keynesian vs Classical economic debate. What are the conflicting theories, key evidence, and future perspectives? (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-045",
+    "prompt": "Calculate the exact value: ((371 / 6) / 25) * 6.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-081",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Alice Smith, Bob Jones, and Charlie Brown. Alice Smith says: 'At least one of us is a knave.' Bob Jones says: 'Alice Smith is lying.' Charlie Brown remains silent. Determine the identities of Alice Smith, Bob Jones, and Charlie Brown. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-01-099",
+    "prompt": "Explain the theory and mechanics of CRISPR-Cas9 gene drive. Discuss its scientific basis, challenges, and implications for modern technology. (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-07-042",
+    "prompt": "A drawer contains 14 black socks and 14 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-02-029",
+    "prompt": "Calculate the exact value: 50 + 447.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-059",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Kevin Bacon will give a lecture at Apple Inc. in Tokyo, while Laura Croft will present at Tesla Motors in Paris.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-070",
+    "prompt": "A train leaves Station A traveling at 52 mph. 3 hours later, another train leaves Station A traveling in the same direction at 84 mph. How long will it take the second train to overtake the first? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-018",
+    "prompt": "Classify the sentiment of this text: 'Shipping was slow, but the customer service was fine and the product works as intended.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-077",
+    "prompt": "If the price of an item increases from $58 to $216, what is the percentage increase? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-052",
+    "prompt": "A drawer contains 9 black socks and 12 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-024",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Hannah Abbott visited the head office of AMD in Boston last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-015",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Oliver Twist recently joined Google LLC in New York City.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-014",
+    "prompt": "Calculate the exact value: 398 + 422.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-012",
+    "prompt": "Three friends, Laura Croft, Michael Scott, and Nancy Drew, each own a different pet: cat, dog, bird. Laura Croft does not own the bird. Michael Scott owns the dog. Who owns the cat? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-03-030",
+    "prompt": "Classify the sentiment of this text: 'Decent value, but does not come with all the accessories shown in some reviews. Average.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-03-052",
+    "prompt": "Classify the sentiment of this text: 'Absolutely stellar customer service. They resolved my issue in under 5 minutes and were incredibly polite. The design is nice too.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-03-044",
+    "prompt": "Classify the sentiment of this text: 'Do not buy this! It is a waste of money. It lacks basic features and is very difficult to use. I'm returning it.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-04-023",
+    "prompt": "Summarize this text in exactly one sentence.\n\nText:\nMachine learning is a subset of artificial intelligence focused on building systems that learn from data, identify patterns, and make decisions with minimal human intervention. Unlike traditional soft...",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-086",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Fiona Gallagher met with the board of Microsoft Corp in London to discuss a strategic partnership. Later, George Clark and Hannah Abbott from Apple Inc. arrived in Tokyo to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-024",
+    "prompt": "Calculate the exact value: 434 * 331.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-044",
+    "prompt": "Explain the historical significance of the first moon landing which took place in the year 1969. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-044",
+    "prompt": "An investor deposits $11532 in a savings account with 6% annual interest compounded annually. What will the balance be after 5 years? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-033",
+    "prompt": "Calculate the exact value: 199 + 191.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-090",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Julia Roberts, Kevin Bacon, and Laura Croft. Julia Roberts says: 'We are all knaves.' Kevin Bacon says: 'Exactly one of us is a knight.' Determine who is a knight and who is a knave. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-100",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Diana Prince met with the board of Microsoft Corp in London to discuss a strategic partnership. Later, Edward Elric and Fiona Gallagher from Apple Inc. arrived in Tokyo to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-098",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Bob Jones met with the board of Salesforce in Beijing to discuss a strategic partnership. Later, Charlie Brown and Diana Prince from Google LLC arrived in New York City to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-091",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Kevin Bacon, Laura Croft, and Michael Scott. Kevin Bacon says: 'At least one of us is a knave.' Laura Croft says: 'Kevin Bacon is lying.' Michael Scott remains silent. Determine the identities of Kevin Bacon, Laura Croft, and Michael Scott. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-093",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Michael Scott met with the board of Intel Corporation in Austin to discuss a strategic partnership. Later, Nancy Drew and Oliver Twist from AMD arrived in Boston to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-03-038",
+    "prompt": "Classify the sentiment of this text: 'The product arrived damaged, and when I contacted support, they were extremely unhelpful and rude. I'm returning it.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-01-045",
+    "prompt": "Provide a brief overview of 'gene editing', describing how it works and its main applications. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-026",
+    "prompt": "Calculate the exact value: 305 * 108.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-08-055",
+    "prompt": "Develop a clean, efficient Python solution: Write a Python function to perform run-length encoding (RLE) on a string.\n\nReturn ONLY raw code.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-05-095",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Oliver Twist met with the board of NVIDIA in Seattle to discuss a strategic partnership. Later, Peter Parker and Alice Smith from IBM Research arrived in Chicago to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-03-048",
+    "prompt": "Classify the sentiment of this text: 'Shipping was slow, but the customer service was fine and the product works as intended. It matches my expectations.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-039",
+    "prompt": "Calculate the exact value: ((801 / 12) / 13) * 5.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-055",
+    "prompt": "Five people (George Clark, Hannah Abbott, Ian Malcolm, Julia Roberts, Kevin Bacon) are in a race. George Clark finished before Hannah Abbott but after Ian Malcolm. Julia Roberts finished before Kevin Bacon but after Hannah Abbott. Who finished last? What is the logical solution?",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-03-023",
+    "prompt": "Classify the sentiment of this text: 'Terrible customer service. I spent 3 hours on hold and they still couldn't resolve my problem.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-05-027",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Kevin Bacon recently joined Oracle in Rome.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-03-036",
+    "prompt": "Classify the sentiment of this text: 'It works as expected, but the build quality is a bit plasticky. Moderate satisfaction. It matches my expectations.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-086",
+    "prompt": "If the price of an item increases from $101 to $373, what is the percentage increase? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-022",
+    "prompt": "Classify the sentiment of this text: 'Absolutely stellar customer service. They resolved my issue in under 5 minutes and were incredibly polite.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-01-055",
+    "prompt": "Explain the primary function of the human gallbladder and list three common health issues related to it. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-050",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Bob Jones will give a lecture at Netflix Inc. in San Francisco, while Charlie Brown will present at Intel Corporation in Austin.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-075",
+    "prompt": "Solve the following problem: A factory produces 47 units per hour. After 8 hours, 10% of the units are inspected. Of those, 2% are defective. How many non-defective inspected units are there? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-060",
+    "prompt": "Classify the sentiment of this text: 'Decent value, but does not come with all the accessories shown in some reviews. Average. It matches my expectations.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-090",
+    "prompt": "Solve the following problem: A factory produces 27 units per hour. After 12 hours, 10% of the units are inspected. Of those, 2% are defective. How many non-defective inspected units are there? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-078",
+    "prompt": "Solve the following problem: A factory produces 31 units per hour. After 6 hours, 25% of the units are inspected. Of those, 2% are defective. How many non-defective inspected units are there? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-022",
+    "prompt": "What is the capital of South Korea, and what is its official currency? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-062",
+    "prompt": "Explain the historical significance of the assassination of Archduke Franz Ferdinand which took place in the year 1914. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-075",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Kevin Bacon met with the board of Amazon Web Services in Berlin to discuss a strategic partnership. Later, Laura Croft and Michael Scott from Meta Platforms arrived in Sydney to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-039",
+    "prompt": "Provide a brief overview of 'supply and demand', describing how it works and its main applications. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-002",
+    "prompt": "Calculate the exact value: 389 + 150.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-08-003",
+    "prompt": "Write code to implement: Write a Python function to calculate the factorial of a non-negative integer using iteration.. Make sure to handle edge cases.\n\nReturn ONLY raw code.",
+    "expected_route": "API_CODE"
+  },
+  {
+    "task_id": "task-gen-02-093",
+    "prompt": "Solve the following problem: A factory produces 10 units per hour. After 6 hours, 10% of the units are inspected. Of those, 2% are defective. How many non-defective inspected units are there? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-056",
+    "prompt": "Explain the historical significance of the signing of the Magna Carta which took place in the year 1215. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-084",
+    "prompt": "Analyze the debate or research surrounding NP-completeness and complexity classes. What are the conflicting theories, key evidence, and future perspectives? (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-086",
+    "prompt": "Analyze the debate or research surrounding homological algebra. What are the conflicting theories, key evidence, and future perspectives? (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-089",
+    "prompt": "If the price of an item increases from $104 to $293, what is the percentage increase? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-032",
+    "prompt": "Calculate the exact value: 437 + 196.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-039",
+    "prompt": "Classify the sentiment of this text: 'It is acceptable. Not the best in its class, but it gets the job done without major issues. It matches my expectations.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-05-074",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Julia Roberts met with the board of Tesla Motors in Paris to discuss a strategic partnership. Later, Kevin Bacon and Laura Croft from Amazon Web Services arrived in Berlin to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-059",
+    "prompt": "Explain the historical significance of the signing of the US Declaration of Independence which took place in the year 1776. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-090",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Julia Roberts met with the board of Meta Platforms in Sydney to discuss a strategic partnership. Later, Kevin Bacon and Laura Croft from SpaceX arrived in Toronto to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-065",
+    "prompt": "Explain the historical significance of the dissolution of the Soviet Union which took place in the year 1991. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-023",
+    "prompt": "Calculate the exact value: 292 - 50.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-079",
+    "prompt": "Explain the theory and mechanics of statistical mechanics in polymer physics. Discuss its scientific basis, challenges, and implications for modern technology. (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-080",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Peter Parker met with the board of AMD in Boston to discuss a strategic partnership. Later, Alice Smith and Bob Jones from NVIDIA arrived in Seattle to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-011",
+    "prompt": "What chemical element has the symbol Mg, and what is its atomic number? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-030",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Nancy Drew visited the head office of Microsoft Corp in London last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-027",
+    "prompt": "Calculate the exact value: 45 * 33.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-036",
+    "prompt": "Provide a brief overview of 'quantum computing', describing how it works and its main applications. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-080",
+    "prompt": "If the price of an item increases from $119 to $267, what is the percentage increase? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-027",
+    "prompt": "Define the basic concept of 'climate' in a single sentence. Keep it simple. (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-042",
+    "prompt": "Provide a brief overview of 'dark matter', describing how it works and its main applications. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-030",
+    "prompt": "Calculate the exact value: 453 - 61.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-043",
+    "prompt": "A store has 258 items. It sells 25% on Monday and 45 more on Tuesday. How many items remain? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-062",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Nancy Drew will give a lecture at Meta Platforms in Sydney, while Oliver Twist will present at SpaceX in Toronto.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-091",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Kevin Bacon met with the board of SpaceX in Toronto to discuss a strategic partnership. Later, Laura Croft and Michael Scott from Netflix Inc. arrived in San Francisco to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-059",
+    "prompt": "Five people (Kevin Bacon, Laura Croft, Michael Scott, Nancy Drew, Oliver Twist) are in a race. Kevin Bacon finished before Laura Croft but after Michael Scott. Nancy Drew finished before Oliver Twist but after Laura Croft. Who finished last? What is the logical solution?",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-02-009",
+    "prompt": "Calculate the exact value: 23 + 297.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-068",
+    "prompt": "If the price of an item increases from $117 to $416, what is the percentage increase? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-094",
+    "prompt": "Analyze the debate or research surrounding supersymmetry breaking. What are the conflicting theories, key evidence, and future perspectives? (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-044",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Laura Croft will give a lecture at Microsoft Corp in London, while Michael Scott will present at Apple Inc. in Tokyo.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-058",
+    "prompt": "A drawer contains 15 black socks and 6 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-065",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Alice Smith will give a lecture at Intel Corporation in Austin, while Bob Jones will present at AMD in Boston.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-014",
+    "prompt": "What chemical element has the symbol P, and what is its atomic number? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-071",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, George Clark met with the board of Google LLC in New York City to discuss a strategic partnership. Later, Hannah Abbott and Ian Malcolm from Microsoft Corp arrived in London to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-03-040",
+    "prompt": "Classify the sentiment of this text: 'Outstanding performance! It handles heavy workloads with ease and never slows down. The design is nice too.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-01-085",
+    "prompt": "Explain the theory and mechanics of Bayesian inference in phylogenetics. Discuss its scientific basis, challenges, and implications for modern technology. (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-008",
+    "prompt": "Classify the sentiment of this text: 'The product arrived damaged, and when I contacted support, they were extremely unhelpful and rude.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-07-068",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Diana Prince, Edward Elric, and Fiona Gallagher. Diana Prince says: 'We are all knaves.' Edward Elric says: 'Exactly one of us is a knight.' Determine who is a knight and who is a knave. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-02-073",
+    "prompt": "A train leaves Station A traveling at 50 mph. 1 hours later, another train leaves Station A traveling in the same direction at 88 mph. How long will it take the second train to overtake the first? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-015",
+    "prompt": "Define the basic concept of 'lightning' in a single sentence. Keep it simple. (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-049",
+    "prompt": "Classify the sentiment of this text: 'I am extremely happy with this purchase. The packaging was neat, and it arrived earlier than expected. The design is nice too.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-03-024",
+    "prompt": "Classify the sentiment of this text: 'It works fine, but the setup took longer than I expected. Average user experience.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-040",
+    "prompt": "A store has 570 items. It sells 10% on Monday and 71 more on Tuesday. How many items remain? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-099",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Charlie Brown met with the board of Google LLC in New York City to discuss a strategic partnership. Later, Diana Prince and Edward Elric from Microsoft Corp arrived in London to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-013",
+    "prompt": "Calculate the exact value: 424 + 455.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-060",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Laura Croft will give a lecture at Tesla Motors in Paris, while Michael Scott will present at Amazon Web Services in Berlin.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-049",
+    "prompt": "Five people (Alice Smith, Bob Jones, Charlie Brown, Diana Prince, Edward Elric) are in a race. Alice Smith finished before Bob Jones but after Charlie Brown. Diana Prince finished before Edward Elric but after Bob Jones. Who finished last? What is the logical solution?",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-07-096",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Peter Parker, Alice Smith, and Bob Jones. Peter Parker says: 'We are all knaves.' Alice Smith says: 'Exactly one of us is a knight.' Determine who is a knight and who is a knave. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-03-015",
+    "prompt": "Classify the sentiment of this text: 'An okay product. It has some useful features but also some design flaws. It's tolerable.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-05-028",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Laura Croft visited the head office of Salesforce in Beijing last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-007",
+    "prompt": "What is the capital of Canada, and what is its official currency? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-089",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Ian Malcolm met with the board of Amazon Web Services in Berlin to discuss a strategic partnership. Later, Julia Roberts and Kevin Bacon from Meta Platforms arrived in Sydney to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-021",
+    "prompt": "Define the basic concept of 'magnetism' in a single sentence. Keep it simple. (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-012",
+    "prompt": "Classify the sentiment of this text: 'Average quality. It is not terrible, but it is not great either. Just okay for the price.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-01-064",
+    "prompt": "Explain the primary function of the human stomach and list three common health issues related to it. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-026",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Julia Roberts visited the head office of IBM Research in Chicago last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-078",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Nancy Drew met with the board of Netflix Inc. in San Francisco to discuss a strategic partnership. Later, Oliver Twist and Peter Parker from Intel Corporation arrived in Austin to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-018",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Bob Jones visited the head office of Tesla Motors in Paris last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-066",
+    "prompt": "Provide a brief overview of 'reinforcement learning', describing how it works and its main applications. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-020",
+    "prompt": "Classify the sentiment of this text: 'Avoid at all costs. The setup instructions are confusing and the software is filled with bugs.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-057",
+    "prompt": "Calculate the exact value: ((564 / 2) / 26) * 4.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-037",
+    "prompt": "Classify the sentiment of this text: 'Works flawlessly. I haven't encountered a single bug or issue. Highly recommended to everyone. The design is nice too.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-055",
+    "prompt": "A store has 543 items. It sells 20% on Monday and 27 more on Tuesday. How many items remain? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-042",
+    "prompt": "Calculate the exact value: ((167 / 8) / 46) * 7.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-083",
+    "prompt": "Explain the theory and mechanics of Markov chain Monte Carlo algorithms. Discuss its scientific basis, challenges, and implications for modern technology. (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-07-040",
+    "prompt": "A drawer contains 15 black socks and 13 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-01-080",
+    "prompt": "Analyze the debate or research surrounding chiral symmetry breaking. What are the conflicting theories, key evidence, and future perspectives? (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-051",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Charlie Brown will give a lecture at Intel Corporation in Austin, while Diana Prince will present at AMD in Boston.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-097",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Alice Smith met with the board of Oracle in Rome to discuss a strategic partnership. Later, Bob Jones and Charlie Brown from Salesforce arrived in Beijing to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-03-054",
+    "prompt": "Classify the sentiment of this text: 'It works fine, but the setup took longer than I expected. Average user experience. It matches my expectations.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-05-061",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Michael Scott will give a lecture at Amazon Web Services in Berlin, while Nancy Drew will present at Meta Platforms in Sydney.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-063",
+    "prompt": "Calculate the exact value: ((414 / 9) / 13) * 5.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-057",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Ian Malcolm will give a lecture at Google LLC in New York City, while Julia Roberts will present at Microsoft Corp in London.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-037",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Edward Elric will give a lecture at Intel Corporation in Austin, while Fiona Gallagher will present at AMD in Boston.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-054",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Fiona Gallagher will give a lecture at IBM Research in Chicago, while George Clark will present at Oracle in Rome.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-037",
+    "prompt": "A store has 344 items. It sells 20% on Monday and 79 more on Tuesday. How many items remain? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-068",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Diana Prince met with the board of IBM Research in Chicago to discuss a strategic partnership. Later, Edward Elric and Fiona Gallagher from Oracle arrived in Rome to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-025",
+    "prompt": "Calculate the exact value: 463 - 451.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-052",
+    "prompt": "Explain the primary function of the human large intestine and list three common health issues related to it. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-076",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Laura Croft met with the board of Meta Platforms in Sydney to discuss a strategic partnership. Later, Michael Scott and Nancy Drew from SpaceX arrived in Toronto to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-081",
+    "prompt": "Solve the following problem: A factory produces 46 units per hour. After 12 hours, 10% of the units are inspected. Of those, 5% are defective. How many non-defective inspected units are there? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-025",
+    "prompt": "Classify the sentiment of this text: 'Beautiful design, very intuitive interface, and runs extremely fast. Exceeded all my expectations.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-05-036",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Diana Prince will give a lecture at Netflix Inc. in San Francisco, while Edward Elric will present at Intel Corporation in Austin.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-006",
+    "prompt": "Define the basic concept of 'blockchain' in a single sentence. Keep it simple. (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-050",
+    "prompt": "Classify the sentiment of this text: 'Avoid at all costs. The setup instructions are confusing and the software is filled with bugs. I'm returning it.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-07-060",
+    "prompt": "A drawer contains 15 black socks and 7 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-02-100",
+    "prompt": "A train leaves Station A traveling at 49 mph. 2 hours later, another train leaves Station A traveling in the same direction at 71 mph. How long will it take the second train to overtake the first? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-025",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Ian Malcolm recently joined NVIDIA in Seattle.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-067",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Charlie Brown met with the board of NVIDIA in Seattle to discuss a strategic partnership. Later, Diana Prince and Edward Elric from IBM Research arrived in Chicago to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-087",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, George Clark met with the board of Apple Inc. in Tokyo to discuss a strategic partnership. Later, Hannah Abbott and Ian Malcolm from Tesla Motors arrived in Paris to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-048",
+    "prompt": "Provide a brief overview of 'theory of relativity', describing how it works and its main applications. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-051",
+    "prompt": "Calculate the exact value: ((796 / 15) / 48) * 3.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-004",
+    "prompt": "Classify the sentiment of this text: 'I was skeptical at first, but after using it for a week, I am completely sold. 5/5 stars!'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-03-041",
+    "prompt": "Classify the sentiment of this text: 'Absolute garbage. It broke within two days of normal use. Customer support refused to refund me. I'm returning it.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-01-096",
+    "prompt": "Analyze the debate or research surrounding general equilibrium theory in economics. What are the conflicting theories, key evidence, and future perspectives? (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-087",
+    "prompt": "Explain the theory and mechanics of Riemann hypothesis and prime distribution. Discuss its scientific basis, challenges, and implications for modern technology. (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-074",
+    "prompt": "If the price of an item increases from $120 to $317, what is the percentage increase? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-085",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Edward Elric met with the board of Google LLC in New York City to discuss a strategic partnership. Later, Fiona Gallagher and George Clark from Microsoft Corp arrived in London to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-077",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Michael Scott met with the board of SpaceX in Toronto to discuss a strategic partnership. Later, Nancy Drew and Oliver Twist from Netflix Inc. arrived in San Francisco to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-001",
+    "prompt": "What is the capital of France, and what is its official currency? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-016",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Peter Parker visited the head office of Microsoft Corp in London last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-079",
+    "prompt": "A train leaves Station A traveling at 48 mph. 4 hours later, another train leaves Station A traveling in the same direction at 76 mph. How long will it take the second train to overtake the first? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-031",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Oliver Twist recently joined Apple Inc. in Tokyo.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-013",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Michael Scott recently joined Oracle in Rome.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-019",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Charlie Brown recently joined Amazon Web Services in Berlin.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-028",
+    "prompt": "Calculate the exact value: 405 - 126.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-046",
+    "prompt": "A drawer contains 14 black socks and 7 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-042",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Julia Roberts will give a lecture at Salesforce in Beijing, while Kevin Bacon will present at Google LLC in New York City.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-002",
+    "prompt": "What chemical element has the symbol He, and what is its atomic number? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-07-045",
+    "prompt": "Five people (Michael Scott, Nancy Drew, Oliver Twist, Peter Parker, Alice Smith) are in a race. Michael Scott finished before Nancy Drew but after Oliver Twist. Peter Parker finished before Alice Smith but after Nancy Drew. Who finished last? What is the logical solution?",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-03-061",
+    "prompt": "Classify the sentiment of this text: 'This product is amazing! It works exactly as advertised and has saved me so much time. Highly recommend! The design is nice too.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-095",
+    "prompt": "If the price of an item increases from $77 to $405, what is the percentage increase? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-056",
+    "prompt": "A drawer contains 9 black socks and 15 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-047",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Oliver Twist will give a lecture at Amazon Web Services in Berlin, while Peter Parker will present at Meta Platforms in Sydney.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-045",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Michael Scott will give a lecture at Apple Inc. in Tokyo, while Nancy Drew will present at Tesla Motors in Paris.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-012",
+    "prompt": "Calculate the exact value: 311 - 239.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-083",
+    "prompt": "If the price of an item increases from $62 to $420, what is the percentage increase? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-029",
+    "prompt": "What chemical element has the symbol H, and what is its atomic number? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-010",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Julia Roberts visited the head office of AMD in Boston last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-07-066",
+    "prompt": "A drawer contains 11 black socks and 10 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-009",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Ian Malcolm recently joined Intel Corporation in Austin.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-098",
+    "prompt": "If the price of an item increases from $86 to $416, what is the percentage increase? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-025",
+    "prompt": "What is the capital of Kenya, and what is its official currency? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-029",
+    "prompt": "Classify the sentiment of this text: 'Horrible battery life. It barely lasts two hours on a full charge, even with minimal usage.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-05-072",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Hannah Abbott met with the board of Microsoft Corp in London to discuss a strategic partnership. Later, Ian Malcolm and Julia Roberts from Apple Inc. arrived in Tokyo to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-03-005",
+    "prompt": "Classify the sentiment of this text: 'Very laggy and constantly crashes. I lost my unsaved data twice. I want a refund.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-03-028",
+    "prompt": "Classify the sentiment of this text: 'A game-changer! Completely revolutionized my daily workflow. I don't know how I lived without it.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-05-082",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Bob Jones met with the board of IBM Research in Chicago to discuss a strategic partnership. Later, Charlie Brown and Diana Prince from Oracle arrived in Rome to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-040",
+    "prompt": "Explain the primary function of the human thyroid gland and list three common health issues related to it. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-011",
+    "prompt": "Calculate the exact value: 289 + 224.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-064",
+    "prompt": "A store has 599 items. It sells 30% on Monday and 80 more on Tuesday. How many items remain? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-055",
+    "prompt": "Classify the sentiment of this text: 'Beautiful design, very intuitive interface, and runs extremely fast. Exceeded all my expectations. The design is nice too.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-05-022",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Fiona Gallagher visited the head office of Netflix Inc. in San Francisco last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-084",
+    "prompt": "Solve the following problem: A factory produces 32 units per hour. After 11 hours, 20% of the units are inspected. Of those, 5% are defective. How many non-defective inspected units are there? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-026",
+    "prompt": "What chemical element has the symbol Pb, and what is its atomic number? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-023",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: George Clark recently joined Intel Corporation in Austin.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-082",
+    "prompt": "A train leaves Station A traveling at 53 mph. 2 hours later, another train leaves Station A traveling in the same direction at 73 mph. How long will it take the second train to overtake the first? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-067",
+    "prompt": "A train leaves Station A traveling at 55 mph. 2 hours later, another train leaves Station A traveling in the same direction at 78 mph. How long will it take the second train to overtake the first? (Difficulty: hard)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-043",
+    "prompt": "Classify the sentiment of this text: 'Best purchase of the year. The build quality is top-notch, feels very premium and solid. The design is nice too.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-059",
+    "prompt": "An investor deposits $11244 in a savings account with 5% annual interest compounded annually. What will the balance be after 6 years? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-036",
+    "prompt": "A drawer contains 6 black socks and 11 white socks. What is the minimum number of socks you must pull out in the dark to guarantee a matching pair? Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-017",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) and return them as a JSON list.\n\nContext: Alice Smith recently joined Apple Inc. in Tokyo.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-006",
+    "prompt": "Calculate the exact value: 312 + 226.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-056",
+    "prompt": "Classify the sentiment of this text: 'Completely useless. It does not perform the function it was advertised to do. Extremely frustrating. I'm returning it.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-01-041",
+    "prompt": "Explain the historical significance of the signing of the Treaty of Versailles which took place in the year 1919. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-043",
+    "prompt": "Explain the primary function of the human heart and list three common health issues related to it. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-031",
+    "prompt": "Calculate the exact value: 152 * 242.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-041",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Ian Malcolm will give a lecture at Oracle in Rome, while Julia Roberts will present at Salesforce in Beijing.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-052",
+    "prompt": "A store has 347 items. It sells 25% on Monday and 58 more on Tuesday. How many items remain? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-037",
+    "prompt": "Explain the primary function of the human small intestine and list three common health issues related to it. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-053",
+    "prompt": "An investor deposits $8668 in a savings account with 7% annual interest compounded annually. What will the balance be after 7 years? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-078",
+    "prompt": "Analyze the debate or research surrounding the Fermi paradox and solutions. What are the conflicting theories, key evidence, and future perspectives? (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-02-015",
+    "prompt": "Calculate the exact value: 367 - 226.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-038",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Fiona Gallagher will give a lecture at AMD in Boston, while George Clark will present at NVIDIA in Seattle.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-05-053",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Edward Elric will give a lecture at NVIDIA in Seattle, while Fiona Gallagher will present at IBM Research in Chicago.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-066",
+    "prompt": "Calculate the exact value: ((170 / 19) / 18) * 4.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-07-053",
+    "prompt": "Five people (Edward Elric, Fiona Gallagher, George Clark, Hannah Abbott, Ian Malcolm) are in a race. Edward Elric finished before Fiona Gallagher but after George Clark. Hannah Abbott finished before Ian Malcolm but after Fiona Gallagher. Who finished last? What is the logical solution?",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-02-034",
+    "prompt": "A store has 493 items. It sells 20% on Monday and 64 more on Tuesday. How many items remain? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-004",
+    "prompt": "What is the capital of Italy, and what is its official currency? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-046",
+    "prompt": "Explain the primary function of the human lungs and list three common health issues related to it. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-034",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Bob Jones will give a lecture at Meta Platforms in Sydney, while Charlie Brown will present at SpaceX in Toronto.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-095",
+    "prompt": "Explain the theory and mechanics of cooperative game theory and Nash bargaining. Discuss its scientific basis, challenges, and implications for modern technology. (Difficulty: hard)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-01-053",
+    "prompt": "Explain the historical significance of the fall of the Berlin Wall which took place in the year 1989. (Difficulty: medium)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-03-058",
+    "prompt": "Classify the sentiment of this text: 'A game-changer! Completely revolutionized my daily workflow. I don't know how I lived without it. The design is nice too.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-03-009",
+    "prompt": "Classify the sentiment of this text: 'It is acceptable. Not the best in its class, but it gets the job done without major issues.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-03-016",
+    "prompt": "Classify the sentiment of this text: 'Fantastic value for money. Very affordable yet performs better than most high-end alternatives.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-060",
+    "prompt": "Calculate the exact value: ((256 / 13) / 20) * 2.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-010",
+    "prompt": "Calculate the exact value: 376 * 342.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-019",
+    "prompt": "Calculate the exact value: 193 - 59.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-038",
+    "prompt": "An investor deposits $11485 in a savings account with 7% annual interest compounded annually. What will the balance be after 6 years? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-02-007",
+    "prompt": "Calculate the exact value: 25 + 57.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-01-009",
+    "prompt": "Define the basic concept of 'evaporation' in a single sentence. Keep it simple. (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-07-070",
+    "prompt": "On an island, there are knights (always tell the truth) and knaves (always lie). You meet three people, Fiona Gallagher, George Clark, and Hannah Abbott. Fiona Gallagher says: 'We are all knaves.' George Clark says: 'Exactly one of us is a knight.' Determine who is a knight and who is a knave. Think step-by-step before answering.",
+    "expected_route": "API_LOGIC"
+  },
+  {
+    "task_id": "task-gen-05-049",
+    "prompt": "Find names, places, and companies in the following sentence. Format output as a JSON list: [{\"entity\": \"...\", \"type\": \"...\"}]\n\nContext: Dr. Alice Smith will give a lecture at SpaceX in Toronto, while Bob Jones will present at Netflix Inc. in San Francisco.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-062",
+    "prompt": "An investor deposits $1319 in a savings account with 3% annual interest compounded annually. What will the balance be after 8 years? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-051",
+    "prompt": "Classify the sentiment of this text: 'The product is decent. It does what it is supposed to do, but it doesn't have any standout features. It matches my expectations.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-036",
+    "prompt": "Calculate the exact value: ((646 / 9) / 20) * 9.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-03-019",
+    "prompt": "Classify the sentiment of this text: 'I am extremely happy with this purchase. The packaging was neat, and it arrived earlier than expected.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-02-003",
+    "prompt": "Calculate the exact value: 124 * 81.",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-070",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Fiona Gallagher met with the board of Salesforce in Beijing to discuss a strategic partnership. Later, George Clark and Hannah Abbott from Google LLC arrived in New York City to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-01-010",
+    "prompt": "What is the capital of China, and what is its official currency? (Difficulty: easy)",
+    "expected_route": "LOCAL_GENERAL"
+  },
+  {
+    "task_id": "task-gen-05-069",
+    "prompt": "Perform named entity recognition on the following context. Extract all persons, companies, dates, and locations. Format your output as a valid JSON list of objects: [{\"entity\": \"...\", \"type\": \"...\"}].\n\nContext: On June 15, Edward Elric met with the board of Oracle in Rome to discuss a strategic partnership. Later, Fiona Gallagher and George Clark from Salesforce arrived in Beijing to finalize the agreement details.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-02-035",
+    "prompt": "An investor deposits $12199 in a savings account with 3% annual interest compounded annually. What will the balance be after 5 years? (Difficulty: medium)",
+    "expected_route": "API_MATH"
+  },
+  {
+    "task_id": "task-gen-05-006",
+    "prompt": "List all the entities and their types from the text below.\n\nContext: Fiona Gallagher visited the head office of Meta Platforms in Sydney last Monday.",
+    "expected_route": "LOCAL_NER"
+  },
+  {
+    "task_id": "task-gen-03-045",
+    "prompt": "Classify the sentiment of this text: 'An okay product. It has some useful features but also some design flaws. It's tolerable. It matches my expectations.'. Classify the tone.",
+    "expected_route": "LOCAL_SENTIMENT"
+  },
+  {
+    "task_id": "task-gen-03-010",
+    "prompt": "Classify the sentiment of this text: 'Outstanding performance! It handles heavy workloads with ease and never slows down.'. Give the sentiment as Positive, Negative, or Neutral.",
+    "expected_route": "LOCAL_SENTIMENT"
   }
 ]
