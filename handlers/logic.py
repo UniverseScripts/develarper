@@ -50,6 +50,6 @@ class LogicHandler:
             prompt=prompt,
             category="API_LOGIC",
             system_prompt=self.system_prompt,
-            max_tokens=200,  # Token budget: concise final answer
+            max_tokens=768,  # Token budget: allow sufficient space for reasoning and final answer
         )
         return extract_logic(raw_response)

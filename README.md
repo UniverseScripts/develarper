@@ -40,13 +40,13 @@ Input Task
 |---|---|---|---|
 | Factual Knowledge | `LOCAL_GENERAL` | Qwen2.5-3B | 150 (local) |
 | Math – pure expression | `AST_EVAL` | AST (deterministic) | 0 |
-| Math – word problem | `API_MATH` | `gemma-4-31b-it` | 50 |
+| Math – word problem | `API_MATH` | `kimi-k2p7-code` / `minimax-m3` | 768 |
 | Sentiment Classification | `LOCAL_SENTIMENT` | Qwen2.5-3B | 20 (local) |
 | Text Summarization (≤6k) | `LOCAL_GENERAL` | Qwen2.5-3B | 250 (local) |
 | Text Summarization (>6k) | `API_LONG_CONTEXT` | `gemma-4-26b-a4b-it` | 200 |
 | Named Entity Recognition | `LOCAL_NER` | Qwen2.5-3B | 300 (local) |
 | Code Debugging | `API_CODE` | `kimi-k2p7-code` | 400 |
-| Logical Reasoning | `API_LOGIC` | `gemma-4-31b-it` | 150 |
+| Logical Reasoning | `API_LOGIC` | `kimi-k2p7-code` / `minimax-m3` | 768 |
 | Code Generation | `API_CODE` | `kimi-k2p7-code` | 500 |
 
 ### Semantic Classifier (L2)
@@ -89,10 +89,10 @@ This reduces input + output tokens on every remote call.
 │   ├── sentiment.py      # → local SLM (Positive / Negative / Neutral)
 │   ├── ner.py            # → local SLM (JSON list output)
 │   ├── summarization.py  # → local SLM
-│   ├── math_handler.py   # → remote gemma-4-31b-it   (max 50 tokens)
+│   ├── math_handler.py   # → remote kimi-k2p7-code / minimax-m3 (max 768 tokens)
 │   ├── debug.py          # → remote kimi-k2p7-code   (max 400 tokens)
 │   ├── code_gen.py       # → remote kimi-k2p7-code   (max 500 tokens)
-│   ├── logic.py          # → remote gemma-4-31b-it   (max 150 tokens)
+│   ├── logic.py          # → remote kimi-k2p7-code / minimax-m3 (max 768 tokens)
 │   └── remote_handlers.py # RemoteGeneralHandler (escalation fallback)
 │
 ├── prompts/              # System prompt templates (.txt)
