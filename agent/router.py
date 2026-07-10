@@ -4,7 +4,7 @@
     Layer 1a: Semantic Cache (0 tokens)
     Layer 1b: AST Math Evaluator (0 tokens, deterministic)
     Layer 2:  Weighted Scoring Classifier (~0ms, no model)
-    Layer 3:  Local SLM — Qwen2.5-1.5B via llama.cpp
+    Layer 3:  Local SLM — Qwen2.5-3B via llama.cpp
     Layer 4:  Remote Fireworks API (category-aware model + prompt compression)
 """
 

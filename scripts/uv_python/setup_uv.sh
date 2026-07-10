@@ -78,13 +78,13 @@ SentenceTransformer('all-MiniLM-L6-v2')
 print('  Model cached ✓')
 " 2>/dev/null || warn "Could not pre-cache model automatically. It will download on first run."
 
-# --- Download Qwen2.5-1.5B GGUF model ---
-info "Checking Qwen2.5-1.5B model weights..."
-MODEL_PATH="models/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+# --- Download Qwen2.5-3B GGUF model ---
+info "Checking Qwen2.5-3B model weights..."
+MODEL_PATH="models/qwen2.5-3b-instruct-q4_k_m.gguf"
 if [ -f "$MODEL_PATH" ]; then
     warn "Model weights already exist at $MODEL_PATH, skipping download."
 else
-    info "Downloading Qwen2.5-1.5B model (~1 GB)..."
+    info "Downloading Qwen2.5-3B model (~2 GB)..."
     bash scripts/download_model.sh
 fi
 

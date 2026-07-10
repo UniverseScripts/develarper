@@ -69,13 +69,13 @@ SentenceTransformer('all-MiniLM-L6-v2')
 print('  Model cached ✓')
 " 2>/dev/null
 
-# --- Download Qwen2.5-1.5B GGUF model ---
-info "Kiểm tra model weights Qwen2.5-1.5B..."
-MODEL_PATH="models/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+# --- Download Qwen2.5-3B GGUF model ---
+info "Kiểm tra model weights Qwen2.5-3B..."
+MODEL_PATH="models/qwen2.5-3b-instruct-q4_k_m.gguf"
 if [ -f "$MODEL_PATH" ]; then
     warn "Model đã tồn tại tại $MODEL_PATH, bỏ qua download."
 else
-    info "Download Qwen2.5-1.5B (~1 GB)..."
+    info "Download Qwen2.5-3B (~2 GB)..."
     bash scripts/download_model.sh
 fi
 
