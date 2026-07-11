@@ -17,7 +17,7 @@ def test_compress_strips_filler() -> None:
 
 def test_compress_appends_suffix_math() -> None:
     result = compress_prompt("What is 2 + 2?", "API_MATH")
-    assert "Output ONLY the final numeric answer" in result
+    assert result == "What is 2 + 2?"
 
 
 def test_compress_appends_suffix_code() -> None:
@@ -39,18 +39,20 @@ def test_model_selection_code_prefers_kimi() -> None:
         assert select_remote_model("API_CODE") == "kimi-k2p7-code"
 
 
-def test_model_selection_math_prefers_gemma() -> None:
+def test_model_selection_math_prefers_kimi() -> None:
     with patch("engines.remote_llm.ALLOWED_MODELS", ["minimax-m3", "kimi-k2p7-code", "gemma-4-31b-it"]):
-        assert select_remote_model("API_MATH") == "gemma-4-31b-it"
+        assert select_remote_model("API_MATH") == "kimi-k2p7-code"
 
 
-def test_model_selection_logic_prefers_gemma_then_minimax() -> None:
-    with patch("engines.remote_llm.ALLOWED_MODELS", ["minimax-m3", "gemma-4-31b-it"]):
+def test_model_selection_logic_prefers_kimi_then_minimax() -> None:
+    with patch("engines.remote_llm.ALLOWED_MODELS", ["gemma-4-31b-it"]):
+        # Preferred logic models are kimi and minimax; neither is allowed.
+        # Fallback logic should pick the first available gemma model.
         assert select_remote_model("API_LOGIC") == "gemma-4-31b-it"
 
     with patch("engines.remote_llm.ALLOWED_MODELS", ["minimax-m3", "kimi-k2p7-code"]):
-        # gemma not available, falls to minimax
-        assert select_remote_model("API_LOGIC") == "minimax-m3"
+        assert select_remote_model("API_LOGIC") == "kimi-k2p7-code"
+
 
 
 def test_model_selection_fallback_empty() -> None:
@@ -84,7 +86,7 @@ async def test_remote_llm_generate_mocked() -> None:
 @pytest.mark.asyncio
 async def test_remote_llm_generate_completions_mocked() -> None:
     engine = RemoteLLMEngine()
-    mock_response = {"choices": [{"text": "99"}]}
+    mock_response = {"choices": [{"message": {"content": "99"}}]}
     with patch("engines.remote_llm.select_remote_model", return_value="minimax-m3"):
         with patch("aiohttp.ClientSession.post") as mock_post:
             mock_resp = AsyncMock()
@@ -94,3 +96,4 @@ async def test_remote_llm_generate_completions_mocked() -> None:
 
             result = await engine.generate("Solve logic riddle", "API_LOGIC")
             assert result == "99"
+

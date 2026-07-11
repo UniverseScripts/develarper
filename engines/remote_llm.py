@@ -45,6 +45,9 @@ CATEGORY_MODEL_PREFERENCE: dict[str, list[str]] = {
     "API_MATH": ["kimi-k2p7-code", "minimax-m3"],
     "API_LOGIC": ["kimi-k2p7-code", "minimax-m3"],
     "API_LONG_CONTEXT": ["gemma-4-26b-a4b-it", "gemma-4-31b-it-nvfp4"],
+    "LOCAL_GENERAL": ["minimax-m3", "kimi-k2p7-code"],
+    "LOCAL_SENTIMENT": ["minimax-m3", "kimi-k2p7-code"],
+    "LOCAL_NER": ["minimax-m3", "kimi-k2p7-code"],
 }
 
 # ---------------------------------------------------------------------------
@@ -181,7 +184,11 @@ class RemoteLLMEngine:
                     response.raise_for_status()
 
                 data = await response.json()
-                if is_chat:
-                    return str(data["choices"][0]["message"]["content"]).strip()
-                else:
-                    return str(data["choices"][0]["text"]).strip()
+                try:
+                    if is_chat:
+                        return str(data["choices"][0]["message"]["content"]).strip()
+                    else:
+                        return str(data["choices"][0]["text"]).strip()
+                except KeyError as e:
+                    logger.error("Response structure: %s", data)
+                    raise e

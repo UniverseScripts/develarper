@@ -132,11 +132,12 @@ async def test_route_api_logic() -> None:
         patch("handlers.summarization.LocalSLMEngine.get_instance"),
         patch("engines.remote_llm.RemoteLLMEngine.generate", new_callable=AsyncMock) as mock_remote,
     ):
-        mock_remote.return_value = "Yes, John is taller than Sue."
+        mock_remote.return_value = "Yes"
         router = AgentRouter(cache=cache)
         result = await router.route("l1", "If John is taller than Mary, and Mary is taller than Sue, is John taller than Sue?")
         mock_remote.assert_called_once()
-        assert result == "Yes, John is taller than Sue."
+        assert result == "Yes"
+
 
 
 # ---------------------------------------------------------------------------
