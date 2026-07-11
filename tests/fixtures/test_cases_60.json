@@ -1,0 +1,422 @@
+[
+  {
+    "task_id": "task-0001",
+    "category": "factual",
+    "difficulty": "easy",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "What is the capital of France? Answer concisely."
+  },
+  {
+    "task_id": "task-0002",
+    "category": "factual",
+    "difficulty": "easy",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "What is the chemical symbol for water?"
+  },
+  {
+    "task_id": "task-0003",
+    "category": "factual",
+    "difficulty": "easy",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "How many continents are there on Earth?"
+  },
+  {
+    "task_id": "task-0004",
+    "category": "factual",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "Who painted the Mona Lisa and in which century was it painted?"
+  },
+  {
+    "task_id": "task-0005",
+    "category": "factual",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "What is the boiling point of water at sea level in degrees Celsius?"
+  },
+  {
+    "task_id": "task-0006",
+    "category": "factual",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "What is the largest planet in our solar system and what is its main composition?"
+  },
+  {
+    "task_id": "task-0007",
+    "category": "factual",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "In what year did the Berlin Wall fall, and which event did it symbolize?"
+  },
+  {
+    "task_id": "task-0008",
+    "category": "factual",
+    "difficulty": "hard",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "Explain the difference between TCP and UDP in one sentence, mentioning reliability and connection state."
+  },
+  {
+    "task_id": "task-0009",
+    "category": "factual",
+    "difficulty": "hard",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "What is the Heisenberg uncertainty principle and what two physical quantities does it relate?"
+  },
+  {
+    "task_id": "task-0010",
+    "category": "factual",
+    "difficulty": "hard",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "Who wrote 'One Hundred Years of Solitude' and what literary genre is the work most associated with?"
+  },
+  {
+    "task_id": "task-0011",
+    "category": "sentiment",
+    "difficulty": "easy",
+    "expected_route": "LOCAL_SENTIMENT",
+    "prompt": "Classify the sentiment of this text as Positive, Negative, or Neutral: 'I love this product, it's amazing!'"
+  },
+  {
+    "task_id": "task-0012",
+    "category": "sentiment",
+    "difficulty": "easy",
+    "expected_route": "LOCAL_SENTIMENT",
+    "prompt": "Classify the sentiment of this text as Positive, Negative, or Neutral: 'This is the worst experience ever, I want a refund.'"
+  },
+  {
+    "task_id": "task-0013",
+    "category": "sentiment",
+    "difficulty": "easy",
+    "expected_route": "LOCAL_SENTIMENT",
+    "prompt": "Classify the sentiment of this text as Positive, Negative, or Neutral: 'The package arrived on Tuesday.'"
+  },
+  {
+    "task_id": "task-0014",
+    "category": "sentiment",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_SENTIMENT",
+    "prompt": "Classify the sentiment of this text as Positive, Negative, or Neutral: 'While the build quality is excellent, the customer service was disappointing.'"
+  },
+  {
+    "task_id": "task-0015",
+    "category": "sentiment",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_SENTIMENT",
+    "prompt": "Classify the sentiment of this text as Positive, Negative, or Neutral: 'I'm not sure how I feel about this update; some features are great but others are confusing.'"
+  },
+  {
+    "task_id": "task-0016",
+    "category": "sentiment",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_SENTIMENT",
+    "prompt": "Classify the sentiment of this text as Positive, Negative, or Neutral: 'It's okay, nothing special but not terrible either.'"
+  },
+  {
+    "task_id": "task-0017",
+    "category": "sentiment",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_SENTIMENT",
+    "prompt": "Classify the sentiment of this text as Positive, Negative, or Neutral: 'Despite the long wait, the food was absolutely delicious and worth it.'"
+  },
+  {
+    "task_id": "task-0018",
+    "category": "sentiment",
+    "difficulty": "hard",
+    "expected_route": "LOCAL_SENTIMENT",
+    "prompt": "Classify the sentiment of this text as Positive, Negative, or Neutral: 'The movie had stunning visuals and a powerful score, yet the plot felt hollow and the ending left me frustrated.'"
+  },
+  {
+    "task_id": "task-0019",
+    "category": "sentiment",
+    "difficulty": "hard",
+    "expected_route": "LOCAL_SENTIMENT",
+    "prompt": "Classify the sentiment of this text as Positive, Negative, or Neutral: 'I suppose it's fine if you don't mind paying premium prices for mediocre quality.'"
+  },
+  {
+    "task_id": "task-0020",
+    "category": "sentiment",
+    "difficulty": "hard",
+    "expected_route": "LOCAL_SENTIMENT",
+    "prompt": "Classify the sentiment of this text as Positive, Negative, or Neutral: 'Slightly disappointed but not surprised given the brand's recent track record.'"
+  },
+  {
+    "task_id": "task-0021",
+    "category": "summarization",
+    "difficulty": "easy",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "Summarize this text in one sentence: 'The sun rises in the east and sets in the west. This happens every single day because the Earth rotates on its axis once every 24 hours.'"
+  },
+  {
+    "task_id": "task-0022",
+    "category": "summarization",
+    "difficulty": "easy",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "Summarize this text: 'Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to produce glucose and oxygen. This process is essential for plant growth and for providing oxygen to the atmosphere.'"
+  },
+  {
+    "task_id": "task-0023",
+    "category": "summarization",
+    "difficulty": "easy",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "Summarize this text: 'The water cycle describes how water evaporates from oceans, forms clouds through condensation, falls back to Earth as precipitation, and collects in rivers and oceans, then repeats continuously.'"
+  },
+  {
+    "task_id": "task-0024",
+    "category": "summarization",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "Summarize this text in two sentences: 'Renewable energy technologies such as solar panels, wind turbines, and hydroelectric dams are expanding rapidly across the globe. Governments are investing heavily in these technologies to reduce dependence on fossil fuels and to meet international climate targets. Solar energy in particular has seen dramatic cost reductions over the past decade, making it competitive with traditional energy sources in many regions. Wind farms, both onshore and offshore, are now a common sight in countries committed to lowering their carbon emissions.'"
+  },
+  {
+    "task_id": "task-0025",
+    "category": "summarization",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "Summarize this text: 'The Industrial Revolution began in Britain in the late 18th century and spread throughout Europe and North America. It marked a shift from agrarian, handcraft-based economies to industrial, machine-driven production. The invention of the steam engine, the mechanization of textiles, and improvements in iron production were central to this transformation. The revolution brought urbanization, as people moved from farms to cities to work in factories, and it fundamentally reshaped social structures, labor, and the global economy.'"
+  },
+  {
+    "task_id": "task-0026",
+    "category": "summarization",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "Summarize this text: 'Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. It relies on algorithms that identify patterns in data and use those patterns to make predictions or decisions. Common approaches include supervised learning, where models learn from labeled examples, and unsupervised learning, where models find structure in unlabeled data. Deep learning, a more advanced technique, uses neural networks with many layers and has driven recent breakthroughs in image recognition, natural language processing, and speech translation.'"
+  },
+  {
+    "task_id": "task-0027",
+    "category": "summarization",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "Summarize this text: 'Climate change is causing noticeable effects across the planet, including rising global temperatures, more frequent extreme weather events, and shifting precipitation patterns. Coastal cities face growing risks from sea level rise, while inland regions experience prolonged droughts and intense heatwaves. Ecosystems are also affected, with many species struggling to adapt to rapidly changing conditions. Scientists warn that without significant reductions in greenhouse gas emissions, these impacts will worsen over the coming decades, threatening food security, water supplies, and human settlements worldwide.'"
+  },
+  {
+    "task_id": "task-0028",
+    "category": "summarization",
+    "difficulty": "hard",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "Summarize this text in exactly one sentence: 'The global economy is facing unprecedented challenges due to shifting trade routes, supply chain disruptions, and geopolitical tensions between major powers. Inflation has risen to levels not seen in decades, prompting central banks to raise interest rates aggressively, which in turn has slowed investment and consumer spending. Energy markets remain volatile as countries transition away from fossil fuels while still relying on them for short-term stability. Labor markets are tight in some sectors but weakening in others, creating an uneven economic landscape. Policymakers must balance the need to control inflation against the risk of triggering a deep recession, all while addressing long-term issues such as aging populations and climate-related financial risks.'"
+  },
+  {
+    "task_id": "task-0029",
+    "category": "summarization",
+    "difficulty": "hard",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "TLDR: 'The recent policy overhaul introduced by the regulatory body imposes stricter reporting requirements on financial institutions, mandates higher capital reserves for mid-sized banks, and establishes a new framework for assessing systemic risk. Proponents argue that these measures will prevent a repeat of the banking instability seen earlier this decade and restore public confidence in the financial system. Critics, however, contend that the increased compliance costs will disproportionately affect smaller community banks, potentially reducing lending to small businesses and rural communities. The policy will be phased in over a three-year period, with periodic reviews to assess its effectiveness and unintended consequences. International coordination with foreign regulators is also planned to avoid regulatory arbitrage.'"
+  },
+  {
+    "task_id": "task-0030",
+    "category": "summarization",
+    "difficulty": "hard",
+    "expected_route": "LOCAL_GENERAL",
+    "prompt": "Summarize the key arguments in under three sentences: 'Proponents of universal basic income argue that it provides a safety net in an era of automation, reduces poverty, and gives individuals the freedom to pursue education or entrepreneurship. They point to pilot programs showing improvements in health and wellbeing among recipients. Critics counter that unconditional cash payments may discourage work, inflate prices, and place an unsustainable burden on public finances. They also argue that targeted welfare programs are more efficient at helping those most in need. A middle position suggests that a modest basic income, combined with existing social programs, could balance these concerns while reducing bureaucratic overhead. Ultimately, the debate hinges on empirical questions about human behavior, economic conditions, and the design of the policy itself.'"
+  },
+  {
+    "task_id": "task-0031",
+    "category": "ner",
+    "difficulty": "easy",
+    "expected_route": "LOCAL_NER",
+    "prompt": "Extract all named entities and return them as a JSON list: 'Barack Obama visited Paris last summer.'"
+  },
+  {
+    "task_id": "task-0032",
+    "category": "ner",
+    "difficulty": "easy",
+    "expected_route": "LOCAL_NER",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) as a JSON list: 'Apple Inc. is headquartered in Cupertino, California.'"
+  },
+  {
+    "task_id": "task-0033",
+    "category": "ner",
+    "difficulty": "easy",
+    "expected_route": "LOCAL_NER",
+    "prompt": "Extract all named entities as a JSON list: 'Albert Einstein was born in Germany and later worked at Princeton.'"
+  },
+  {
+    "task_id": "task-0034",
+    "category": "ner",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_NER",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) as a JSON list: 'Microsoft acquired LinkedIn in 2016 for $26.2 billion, strengthening its presence in the professional networking space.'"
+  },
+  {
+    "task_id": "task-0035",
+    "category": "ner",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_NER",
+    "prompt": "Extract all named entities as a JSON list: 'The United Nations held a summit in New York City where Secretary-General Antonio Guterres addressed delegates from over 190 countries.'"
+  },
+  {
+    "task_id": "task-0036",
+    "category": "ner",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_NER",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) as a JSON list: 'Tesla CEO Elon Musk announced a new gigafactory in Berlin, aiming to compete with BMW and Volkswagen in the European market.'"
+  },
+  {
+    "task_id": "task-0037",
+    "category": "ner",
+    "difficulty": "medium",
+    "expected_route": "LOCAL_NER",
+    "prompt": "Extract all named entities as a JSON list: 'In 1969, NASA's Apollo 11 mission landed Neil Armstrong and Buzz Aldrin on the Moon, a moment watched by millions across the United States.'"
+  },
+  {
+    "task_id": "task-0038",
+    "category": "ner",
+    "difficulty": "hard",
+    "expected_route": "LOCAL_NER",
+    "prompt": "Extract all named entities with their types as a JSON list of objects: 'The Treaty of Versailles, signed in 1919, formally ended World War I between the Allied Powers and Germany, redrawing borders across Europe and the Middle East.'"
+  },
+  {
+    "task_id": "task-0039",
+    "category": "ner",
+    "difficulty": "hard",
+    "expected_route": "LOCAL_NER",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations) as a JSON list: 'During his tenure at Stanford University, Dr. Andrew Ng co-founded Coursera and led the Google Brain project, later joining Baidu to direct its artificial intelligence research lab.'"
+  },
+  {
+    "task_id": "task-0040",
+    "category": "ner",
+    "difficulty": "hard",
+    "expected_route": "LOCAL_NER",
+    "prompt": "Extract all named entities (Persons, Organizations, Locations, Dates) as a JSON list: 'On January 6, 2021, the World Health Organization announced that the COVID-19 vaccine developed by Pfizer and BioNTech showed 95% efficacy in trials conducted across the United States, Brazil, and South Africa.'"
+  },
+  {
+    "task_id": "task-0041",
+    "category": "code_debug",
+    "difficulty": "easy",
+    "expected_route": "API_CODE",
+    "prompt": "Find and fix the bug in this Python function. Return ONLY the corrected code without explanation.\ndef add(a, b):\n    return a - b"
+  },
+  {
+    "task_id": "task-0042",
+    "category": "code_debug",
+    "difficulty": "easy",
+    "expected_route": "API_CODE",
+    "prompt": "Find and fix the bug in this Python function. Return ONLY the corrected code without explanation.\ndef count_to_ten():\n    for i in range(1, 10):\n        print(i)"
+  },
+  {
+    "task_id": "task-0043",
+    "category": "code_debug",
+    "difficulty": "easy",
+    "expected_route": "API_CODE",
+    "prompt": "Find and fix the bug in this Python function. Return ONLY the corrected code without explanation.\ndef greet(name):\n    return 'Hello, ' + nam"
+  },
+  {
+    "task_id": "task-0044",
+    "category": "code_debug",
+    "difficulty": "medium",
+    "expected_route": "API_CODE",
+    "prompt": "Find and fix the bug in this Python function. Return ONLY the corrected code without explanation.\ndef binary_search(arr, target):\n    low, high = 0, len(arr)\n    while low <= high:\n        mid = (low + high) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+  },
+  {
+    "task_id": "task-0045",
+    "category": "code_debug",
+    "difficulty": "medium",
+    "expected_route": "API_CODE",
+    "prompt": "Find and fix the bug in this Python function. Return ONLY the corrected code without explanation.\ndef reverse_string(s):\n    result = ''\n    for i in range(len(s)):\n        result += s[i]\n    return result"
+  },
+  {
+    "task_id": "task-0046",
+    "category": "code_debug",
+    "difficulty": "medium",
+    "expected_route": "API_CODE",
+    "prompt": "Find and fix the bug in this Python function. Return ONLY the corrected code without explanation.\ndef factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n)\n"
+  },
+  {
+    "task_id": "task-0047",
+    "category": "code_debug",
+    "difficulty": "medium",
+    "expected_route": "API_CODE",
+    "prompt": "Find and fix the bug in this Python function. Return ONLY the corrected code without explanation.\ndef is_palindrome(s):\n    left, right = 0, len(s)\n    while left < right:\n        if s[left] != s[right]:\n            return False\n        left += 1\n        right -= 1\n    return True"
+  },
+  {
+    "task_id": "task-0048",
+    "category": "code_debug",
+    "difficulty": "hard",
+    "expected_route": "API_CODE",
+    "prompt": "Find and fix the bug in this Python LRU cache implementation. Return ONLY the corrected code without explanation.\nclass LRUCache:\n    def __init__(self, capacity):\n        self.capacity = capacity\n        self.cache = {}\n    def get(self, key):\n        if key in self.cache:\n            return self.cache[key]\n        return -1\n    def put(self, key, value):\n        if key in self.cache:\n            self.cache[key] = value\n        else:\n            if len(self.cache) >= self.capacity:\n                self.cache.pop(next(iter(self.cache)))\n            self.cache[key] = value"
+  },
+  {
+    "task_id": "task-0049",
+    "category": "code_debug",
+    "difficulty": "hard",
+    "expected_route": "API_CODE",
+    "prompt": "Find and fix the bug in this linked list cycle detection function. Return ONLY the corrected code without explanation.\ndef has_cycle(head):\n    slow = head\n    fast = head.next\n    while slow != fast:\n        if fast is None or fast.next is None:\n            return False\n        slow = slow.next\n        fast = fast.next\n    return True"
+  },
+  {
+    "task_id": "task-0050",
+    "category": "code_debug",
+    "difficulty": "hard",
+    "expected_route": "API_CODE",
+    "prompt": "Find and fix the bug in this merge sort implementation. Return ONLY the corrected code without explanation.\ndef merge_sort(arr):\n    if len(arr) <= 1:\n        return arr\n    mid = len(arr) // 2\n    left = merge_sort(arr[:mid])\n    right = merge_sort(arr[mid:])\n    return merge(left, right)\n\ndef merge(left, right):\n    result = []\n    i = j = 0\n    while i < len(left) and j < len(right):\n        if left[i] < right[j]:\n            result.append(left[j])\n            i += 1\n        else:\n            result.append(right[i])\n            j += 1\n    result.extend(left[i:])\n    result.extend(right[j:])\n    return result"
+  },
+  {
+    "task_id": "task-0051",
+    "category": "code_gen",
+    "difficulty": "easy",
+    "expected_route": "API_CODE",
+    "prompt": "Write a Python function that takes two numbers and returns the larger one. Return ONLY raw code."
+  },
+  {
+    "task_id": "task-0052",
+    "category": "code_gen",
+    "difficulty": "easy",
+    "expected_route": "API_CODE",
+    "prompt": "Write a Python function that returns True if a number is even, False otherwise. Return ONLY raw code."
+  },
+  {
+    "task_id": "task-0053",
+    "category": "code_gen",
+    "difficulty": "easy",
+    "expected_route": "API_CODE",
+    "prompt": "Write a Python function that reverses a string. Return ONLY raw code."
+  },
+  {
+    "task_id": "task-0054",
+    "category": "code_gen",
+    "difficulty": "medium",
+    "expected_route": "API_CODE",
+    "prompt": "Write a Python function that checks whether a given string is a palindrome. Return ONLY raw code."
+  },
+  {
+    "task_id": "task-0055",
+    "category": "code_gen",
+    "difficulty": "medium",
+    "expected_route": "API_CODE",
+    "prompt": "Write a Python function that computes the nth Fibonacci number iteratively. Return ONLY raw code."
+  },
+  {
+    "task_id": "task-0056",
+    "category": "code_gen",
+    "difficulty": "medium",
+    "expected_route": "API_CODE",
+    "prompt": "Write a Python function that merges two sorted lists into one sorted list. Return ONLY raw code."
+  },
+  {
+    "task_id": "task-0057",
+    "category": "code_gen",
+    "difficulty": "medium",
+    "expected_route": "API_CODE",
+    "prompt": "Write a Python function that finds the first non-repeating character in a string and returns it, or None if none exists. Return ONLY raw code."
+  },
+  {
+    "task_id": "task-0058",
+    "category": "code_gen",
+    "difficulty": "hard",
+    "expected_route": "API_CODE",
+    "prompt": "Implement Dijkstra's shortest path algorithm in Python. Given a weighted graph as an adjacency dict and a start node, return a dict of shortest distances to all nodes. Return ONLY raw code."
+  },
+  {
+    "task_id": "task-0059",
+    "category": "code_gen",
+    "difficulty": "hard",
+    "expected_route": "API_CODE",
+    "prompt": "Implement an LRU cache in Python with get(key) and put(key, value) methods, both operating in O(1) time. Return ONLY raw code."
+  },
+  {
+    "task_id": "task-0060",
+    "category": "code_gen",
+    "difficulty": "hard",
+    "expected_route": "API_CODE",
+    "prompt": "Write a Python function that detects whether a singly linked list has a cycle using Floyd's tortoise and hare algorithm. Return ONLY raw code."
+  }
+]

@@ -42,12 +42,14 @@ Input Task
 | Math – pure expression | `AST_EVAL` | AST (deterministic) | 0 |
 | Math – word problem | `API_MATH` | `kimi-k2p7-code` / `minimax-m3` | 768 |
 | Sentiment Classification | `LOCAL_SENTIMENT` | Qwen2.5-3B | 20 (local) |
-| Text Summarization (≤6k) | `LOCAL_GENERAL` | Qwen2.5-3B | 250 (local) |
-| Text Summarization (>6k) | `API_LONG_CONTEXT` | `gemma-4-26b-a4b-it` | 200 |
+| Text Summarization (≤6k chars) | `LOCAL_GENERAL` | Qwen2.5-3B | 250 (local) |
+| Text Summarization (>6k chars) | `API_LONG_CONTEXT` | `gemma-4-26b-a4b-it` | 200 |
 | Named Entity Recognition | `LOCAL_NER` | Qwen2.5-3B | 300 (local) |
-| Code Debugging | `API_CODE` | `kimi-k2p7-code` | 400 |
+| Code Debugging | `API_CODE` (local-first) | Qwen2.5-3B → `kimi-k2p7-code` | 400 |
 | Logical Reasoning | `API_LOGIC` | `kimi-k2p7-code` / `minimax-m3` | 768 |
-| Code Generation | `API_CODE` | `kimi-k2p7-code` | 500 |
+| Code Generation | `API_CODE` (local-first) | Qwen2.5-3B → `kimi-k2p7-code` | 500 |
+
+> **Local-first code strategy**: Code debugging and code generation tasks use a difficulty classifier (`code_utils.py`). Easy/medium tasks attempt Qwen2.5-3B locally first, validated with `ast.parse` + completeness checks — only falling back to the remote API if local output is invalid. Hard tasks go directly to the remote API to avoid wasting wall-clock time.
 
 ### Semantic Classifier (L2)
 
@@ -57,12 +59,27 @@ Layer 2 uses **`all-MiniLM-L6-v2`** (sentence-transformers) combined with a **Su
 - **Consolidated Training**: Trained on a diverse combined dataset of **3,235 tasks** (covering standard, adversarial, and conversational phrasings).
 - **Accuracy**: Achieves **100.00% classification accuracy** across all task categories, including tricky inputs with overlapping keywords (e.g., historical numbers or code snippets).
 - **Efficiency**: Runs entirely local with **0 Fireworks API tokens** and extremely low memory footprint (weights are only ~100 KB).
+- **Auto-training**: If pre-trained weights are missing, the classifier automatically trains from `tests/fixtures/task.json` at startup.
+
+### Remote Model Selection
+
+The agent dynamically selects the best model from `ALLOWED_MODELS` (injected at runtime by the harness) using per-category priority preferences:
+
+| Category | Preferred Models (in priority order) | Fallback |
+|---|---|---|
+| `API_CODE` | `kimi-k2p7-code` → `gemma-4-31b-it` | First available |
+| `API_MATH` | `kimi-k2p7-code` → `minimax-m3` | First available |
+| `API_LOGIC` | `kimi-k2p7-code` → `minimax-m3` | First available |
+| `API_LONG_CONTEXT` | `gemma-4-26b-a4b-it` → `gemma-4-31b-it-nvfp4` | First available |
+| `LOCAL_GENERAL` (escalation) | `minimax-m3` → `kimi-k2p7-code` | First available |
+| `LOCAL_SENTIMENT` (escalation) | `minimax-m3` → `kimi-k2p7-code` | First available |
+| `LOCAL_NER` (escalation) | `minimax-m3` → `kimi-k2p7-code` | First available |
 
 ### Prompt Compression
 
 Before every remote API call, the prompt goes through two transforms:
 1. **Filler strip** — removes phrases like *"Can you please explain..."*, *"I would like you to..."*
-2. **Output suffix** — appends a concise constraint (e.g., `" Output ONLY the final numeric answer."`)
+2. **Output suffix** — appends a concise constraint per category (e.g., `" Return ONLY raw code."` for code tasks)
 
 This reduces input + output tokens on every remote call.
 
@@ -72,54 +89,83 @@ This reduces input + output tokens on every remote call.
 
 ```
 ├── agent/
-│   ├── schemas.py        # Pydantic Task & Result models
-│   ├── cache.py          # SHA-256 semantic dedup cache (thread-safe)
-│   ├── ast_eval.py       # Safe deterministic math evaluator (AST whitelist)
-│   ├── classifier.py     # Semantic embedding classifier (all-MiniLM-L6-v2)
-│   ├── router.py         # AgentRouter — orchestrates all 4 layers
-│   └── watchdog.py       # Daemon thread: fires at 570s, flushes partial output
+│   ├── __init__.py
+│   ├── schemas.py            # Pydantic Task & Result models
+│   ├── cache.py              # SHA-256 semantic dedup cache (thread-safe)
+│   ├── ast_eval.py           # Safe deterministic math evaluator (AST whitelist)
+│   ├── classifier.py         # Supervised PyTorch classifier (all-MiniLM-L6-v2 + MLP)
+│   ├── supervised_model.pt   # Pre-trained classifier weights (~100 KB)
+│   ├── router.py             # AgentRouter — orchestrates all 4 layers
+│   └── watchdog.py           # Daemon thread: fires at 570s, flushes partial output
 │
 ├── engines/
-│   ├── local_slm.py      # llama-cpp-python wrapper (Qwen2.5-3B Q4_K_M)
-│   └── remote_llm.py     # Async Fireworks API client (aiohttp + tenacity retry)
+│   ├── __init__.py
+│   ├── local_slm.py          # llama-cpp-python wrapper (Qwen2.5-3B Q4_K_M)
+│   └── remote_llm.py         # Async Fireworks API client (aiohttp + tenacity retry)
 │
-├── handlers/             # One handler file per capability domain
-│   ├── _base.py          # Shared load_prompt_template utility
-│   ├── factual.py        # → local SLM
-│   ├── sentiment.py      # → local SLM (Positive / Negative / Neutral)
-│   ├── ner.py            # → local SLM (JSON list output)
-│   ├── summarization.py  # → local SLM
-│   ├── math_handler.py   # → remote kimi-k2p7-code / minimax-m3 (max 768 tokens)
-│   ├── debug.py          # → remote kimi-k2p7-code   (max 400 tokens)
-│   ├── code_gen.py       # → remote kimi-k2p7-code   (max 500 tokens)
-│   ├── logic.py          # → remote kimi-k2p7-code / minimax-m3 (max 768 tokens)
-│   └── remote_handlers.py # RemoteGeneralHandler (escalation fallback)
+├── handlers/                 # One handler file per capability domain
+│   ├── __init__.py
+│   ├── _base.py              # Shared load_prompt_template utility
+│   ├── code_utils.py         # Code difficulty classifier + extract/validate helpers
+│   ├── factual.py            # → local SLM
+│   ├── sentiment.py          # → local SLM (Positive / Negative / Neutral)
+│   ├── ner.py                # → local SLM (JSON list output)
+│   ├── summarization.py      # → local SLM
+│   ├── math_handler.py       # → remote (CoT + numeric extraction, max 768 tokens)
+│   ├── debug.py              # → local-first, API fallback (max 400 tokens)
+│   ├── code_gen.py           # → local-first, API fallback (max 500 tokens)
+│   ├── logic.py              # → remote (max 768 tokens)
+│   ├── local_handlers.py     # Backwards-compat composite LocalGeneralHandler
+│   └── remote_handlers.py    # RemoteGeneralHandler (escalation fallback)
 │
-├── prompts/              # System prompt templates (.txt)
-├── models/               # Bundled GGUF weights (~1 GB, not tracked in git)
+├── prompts/                  # System prompt templates (.txt)
+│   ├── factual.txt
+│   ├── sentiment.txt
+│   ├── ner.txt
+│   ├── summarization.txt
+│   ├── remote_math.txt       # CoT with few-shot examples → ANSWER: <number>
+│   ├── remote_logic.txt      # Direct answer only, no explanation
+│   ├── remote_code.txt       # Raw Python code output only
+│   ├── remote_general.txt    # Escalation fallback prompt
+│   ├── local_code_gen.txt    # Local code generation (no markdown)
+│   └── local_code_debug.txt  # Local debug (corrected code only)
+│
+├── models/                   # Bundled GGUF weights (~1 GB, not tracked in git)
+│
 ├── tests/
 │   ├── fixtures/
-│   │   ├── task.json              # 3,235 consolidated tasks (standard + tricky + diverse + practice + sample)
-│   │   └── expected_results.json  # Baseline expected answers for sample tasks
+│   │   ├── task.json                 # 3,235 consolidated tasks (classifier training data)
+│   │   ├── expected_results.json     # Baseline expected answers for sample tasks
+│   │   ├── sample_tasks.json         # Practice tasks from the hackathon guide
+│   │   └── test_cases_60.json        # 60-task evaluation subset
+│   ├── results/                      # Saved test run outputs
+│   ├── eval_200_tasks.json           # 200-task evaluation dataset
+│   ├── eval_results.json             # Evaluation results (200 tasks)
+│   ├── evaluation_report.md          # Detailed performance report (93% accuracy)
 │   ├── test_ast_eval.py
 │   ├── test_cache.py
 │   ├── test_classifier.py
+│   ├── test_local_slm.py
 │   ├── test_remote_llm.py
 │   ├── test_router.py
 │   └── test_integration.py
 │
 ├── scripts/
-│   ├── setup.sh             # 🚀 First-time setup (install everything)
-│   ├── run.sh               # ▶️  Run agent with custom input/output
-│   ├── test_local.py        # 🧪 Run practice tasks locally + token stats
-│   ├── download_model.sh    # Download GGUF weights from HuggingFace
-│   └── simulate_grading.sh  # Docker run with 4GB RAM / 2 CPU constraints
+│   ├── setup.sh                # 🚀 First-time setup (install everything)
+│   ├── run.sh                  # ▶️  Run agent with custom input/output
+│   ├── test_local.py           # 🧪 Run practice tasks locally + token stats
+│   ├── prompt_benchmark.py     # 📊 Benchmark 5 prompting strategies (sentiment + summarization)
+│   ├── download_model.sh       # Download GGUF weights from HuggingFace
+│   └── simulate_grading.sh    # Docker run with 4GB RAM / 2 CPU constraints
 │
-├── output/               # Generated results (git-ignored)
-├── main.py               # Entrypoint
-├── Dockerfile
-├── .env.example          # Template — copy to .env and fill in credentials
-└── requirements.txt
+├── output/                   # Generated results (git-ignored)
+├── main.py                   # Entrypoint — async task processing with watchdog
+├── Dockerfile                # Python 3.12-slim + uv package manager
+├── entrypoint.sh             # Loads .env if present, then runs main.py
+├── .env.example              # Template — copy to .env and fill in credentials
+├── pyproject.toml            # ruff + mypy + pytest configuration
+├── requirements.txt
+└── requirements-dev.txt
 ```
 
 ---
@@ -185,12 +231,26 @@ ANSWER : The capital of Australia is Canberra...
   ⚠️  Đây là LOCAL tokens (0 Fireworks tokens)
 ```
 
+### Benchmark prompting strategies
+
+```bash
+PYTHONPATH=. python scripts/prompt_benchmark.py
+```
+
+Benchmarks 5 strategies (baseline, zero-shot strict, few-shot, chain-of-thought, self-consistency 3×) across sentiment and summarization — outputs CSV + markdown summary to `output/`.
+
 ### Chạy unit tests
 
 ```bash
 # Unit tests — không cần model (mocked)
 PYTHONPATH=. pytest tests/test_ast_eval.py tests/test_cache.py \
     tests/test_remote_llm.py tests/test_router.py -v
+
+# Classifier test (requires all-MiniLM-L6-v2 + task.json)
+PYTHONPATH=. pytest tests/test_classifier.py -v
+
+# Local SLM test (requires GGUF model)
+PYTHONPATH=. pytest tests/test_local_slm.py -v
 
 # Full integration test (loads local SLM)
 PYTHONPATH=. python tests/test_integration.py
@@ -219,6 +279,12 @@ cat output_test/results.json
 # 5. Push lên Docker Hub khi sẵn sàng submit
 docker push <your-dockerhub-username>/develarper-agent:latest
 ```
+
+**Docker image features:**
+- Uses `entrypoint.sh` (loads `.env` if present, then runs `main.py`)
+- Sets `HF_HUB_OFFLINE=1` and `TRANSFORMERS_OFFLINE=1` — all model weights are pre-cached at build time, no runtime downloads
+- Pre-caches `all-MiniLM-L6-v2` sentence-transformer during build
+- Bundles `Qwen2.5-3B Q4_K_M` GGUF (~986 MB) in `/app/models/`
 
 ---
 
@@ -260,19 +326,40 @@ Subject to: accuracy ≥ 80% (binary gate — phải pass trước)
 ```
 
 - **Local execution = 0 Fireworks tokens** → maximize local handling
+- **Local-first code strategy** → easy/medium code tasks solved locally with AST validation → only hard tasks or failed validations use API tokens
 - **Supervised PyTorch Classifier** → 100.00% routing accuracy → zero misroutes → zero unnecessary API token waste
 - **Prompt compression** → strip filler phrases + output suffix → giảm tokens mỗi remote call
 - **Per-category `max_tokens` budgets** → giới hạn output dài không cần thiết
 - **Semantic cache** → dedup identical/similar prompts
+- **Category-aware model selection** → pick best available model per task type from `ALLOWED_MODELS`
+- **Escalation model preferences** → local escalations prefer `minimax-m3` for cost efficiency
+
+---
+
+## Evaluation Results
+
+Local evaluation on 200 tasks (100 Factual + 100 Summarization) achieved:
+
+| Metric | Value |
+|---|---|
+| **Global Accuracy** | 93.00% (186/200) |
+| **Avg Latency** | 505.1 ms |
+| Factual Knowledge | 89.00% accuracy, 598.6 ms avg |
+| Text Summarization | 97.00% accuracy, 411.5 ms avg |
+
+See [`tests/evaluation_report.md`](tests/evaluation_report.md) for detailed analysis.
 
 ---
 
 ## Development Notes
 
-- **Python version**: 3.10 (Docker) / 3.11+ (host dev)
+- **Python version**: 3.12 (Docker) / 3.11+ (host dev)
+- **Package manager**: `uv` (in Docker), `pip` (host dev)
 - **Classifier**: `all-MiniLM-L6-v2` (SentenceTransformer) + PyTorch MLP head — trained locally on 3,235 consolidated tasks (including test suite prompts)
 - **Local SLM**: `Qwen2.5-3B-Instruct Q4_K_M` via `llama-cpp-python`
-- **Linting**: `ruff check .`
-- **Type checking**: `mypy .`
-- **Pre-commit**: `pre-commit run --all-files`
+- **Remote API**: `aiohttp` + `tenacity` retry (3 attempts, exponential backoff)
+- **Math prompting**: CoT with few-shot examples, handles fractions/decimals, answer extraction via regex
+- **Linting**: `ruff check .` (target: Python 3.11, line-length: 150)
+- **Type checking**: `mypy .` (strict mode, Python 3.12)
+- **Pre-commit**: `pre-commit run --all-files` (ruff + ruff-format + mypy + file checks)
 - Không cần API key để chạy local SLM tasks và unit tests
