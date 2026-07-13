@@ -124,7 +124,7 @@ class RemoteLLMEngine:
 
     @retry(
         reraise=True,
-        stop=stop_after_attempt(3),
+        stop=stop_after_attempt(2),
         wait=wait_exponential(multiplier=1, min=2, max=10),
         retry=retry_if_exception_type(
             (
@@ -183,7 +183,7 @@ class RemoteLLMEngine:
                 "temperature": temperature,
             }
 
-        timeout = aiohttp.ClientTimeout(total=20, connect=5)
+        timeout = aiohttp.ClientTimeout(total=15, connect=5)
         async with aiohttp.ClientSession(timeout=timeout) as session:
             async with session.post(endpoint, headers=headers, json=payload) as response:
                 if response.status != 200:

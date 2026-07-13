@@ -7,6 +7,7 @@ GBNF grammar so the model can ONLY emit a valid label.
 
 import logging
 import os
+import re
 
 from engines.local_slm import LocalSLMEngine
 
@@ -60,12 +61,10 @@ _GRAMMAR_STR = "root ::= " + " | ".join(f'"{label}"' for label in _LABELS)
 
 _grammar = None
 
-
 def _get_grammar():
     global _grammar
     if _grammar is None:
         from llama_cpp import LlamaGrammar
-
         _grammar = LlamaGrammar.from_string(_GRAMMAR_STR)
     return _grammar
 
@@ -73,11 +72,22 @@ def _get_grammar():
 def classify(prompt: str) -> str:
     """
     Classify a prompt into one of the routing destinations.
+    Uses regex for Math (safest pattern) to save tokens/latency,
+    and the local LLM for natural language tasks.
     """
     if len(prompt) > _LONG_CONTEXT_THRESHOLD:
         logger.debug("Classifier: long context (%d chars) → %s", len(prompt), ROUTE_API_LONG)
         return ROUTE_API_LONG
 
+    p = prompt.lower()
+    
+    # 1. Fast Regex for Math (safest)
+    if re.search(r'\b(calculate|math|arithmetic|percentage|equation|multiply|divide|add|subtract|solve|derivative)\b', p) or re.search(r'\d+\s*[\+\-\*\/]\s*\d+', p):
+        if not re.search(r'\b(python|script|code|riddle|puzzle|logical|story|function|bug)\b', p):
+            logger.debug("Classifier: matched regex → %s", ROUTE_API_MATH)
+            return ROUTE_API_MATH
+
+    # 2. LLM for the rest
     engine = LocalSLMEngine.get_instance()
     raw = engine.generate(
         prompt=f"Task:\n{prompt}\n\nLabel:",
