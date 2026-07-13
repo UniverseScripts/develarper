@@ -23,7 +23,9 @@ class LocalSLMEngine:
 
     def __init__(self, model_path: str) -> None:
         n_ctx = int(os.environ.get("LOCAL_N_CTX", "2048"))
-        n_threads = int(os.environ.get("LOCAL_N_THREADS", "2"))
+        # Dynamic thread scaling: fully utilize AMD compute instance
+        default_threads = str(max(2, (os.cpu_count() or 4) - 1))
+        n_threads = int(os.environ.get("LOCAL_N_THREADS", default_threads))
         # Default n_gpu_layers to -1 (automatic metal) on Mac/Jupyter, but 0 in production
         # We can dynamically set this via environment variables.
         n_gpu_layers = int(os.environ.get("LOCAL_N_GPU_LAYERS", "0"))
@@ -75,3 +77,23 @@ class LocalSLMEngine:
             return "__ESCALATE__"
 
         return text
+
+
+class ClassifierEngine(LocalSLMEngine):
+    """
+    Separate singleton to maintain an isolated KV cache for the Classifier.
+    Because llama.cpp uses mmap, weights (2.1GB) are shared in memory with LocalSLMEngine.
+    This entirely eliminates the KV cache thrashing and lock contention between classification and generation.
+    """
+
+    _instance: Optional["ClassifierEngine"] = None
+    _init_lock = threading.Lock()
+
+    @classmethod
+    def get_instance(cls) -> "ClassifierEngine":
+        if cls._instance is None:
+            with cls._init_lock:
+                if cls._instance is None:
+                    model_path = os.environ.get("LOCAL_MODEL_PATH", "models/qwen2.5-3b-instruct-q4_k_m.gguf")
+                    cls._instance = cls(model_path=model_path)
+        return cls._instance
