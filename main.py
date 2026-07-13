@@ -13,7 +13,6 @@ import sys
 from dotenv import load_dotenv
 
 from agent.cache import SemanticCache
-from agent.classifier import classify
 from agent.router import AgentRouter
 from agent.schemas import Task
 from agent.watchdog import Watchdog
@@ -44,13 +43,13 @@ async def _process(task: Task) -> None:
     assert _router is not None and _lock is not None
     try:
         answer = await asyncio.wait_for(_router.route(task.task_id, task.prompt), timeout=25.0)
-    except asyncio.TimeoutError:
+    except TimeoutError:
         logger.error("Task %s timed out after 25s", task.task_id)
         answer = "Error: Execution timed out."
     except Exception as exc:
         logger.error("Task %s failed: %s", task.task_id, exc)
         answer = f"Error: {exc}"
-        
+
     async with _lock:
         _completed.append({"task_id": task.task_id, "answer": answer})
     logger.info("Done: %s", task.task_id)

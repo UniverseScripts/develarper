@@ -6,8 +6,8 @@ GBNF grammar so the model can ONLY emit a valid label.
 """
 
 import logging
-import os
 import re
+from typing import Any
 
 from engines.local_slm import LocalSLMEngine
 
@@ -61,10 +61,12 @@ _GRAMMAR_STR = "root ::= " + " | ".join(f'"{label}"' for label in _LABELS)
 
 _grammar = None
 
-def _get_grammar():
+
+def _get_grammar() -> Any:
     global _grammar
     if _grammar is None:
-        from llama_cpp import LlamaGrammar
+        from llama_cpp import LlamaGrammar  # type: ignore[attr-defined]
+
         _grammar = LlamaGrammar.from_string(_GRAMMAR_STR)
     return _grammar
 
@@ -80,10 +82,12 @@ def classify(prompt: str) -> str:
         return ROUTE_API_LONG
 
     p = prompt.lower()
-    
+
     # 1. Fast Regex for Math (safest)
-    if re.search(r'\b(calculate|math|arithmetic|percentage|equation|multiply|divide|add|subtract|solve|derivative)\b', p) or re.search(r'\d+\s*[\+\-\*\/]\s*\d+', p):
-        if not re.search(r'\b(python|script|code|riddle|puzzle|logical|story|function|bug)\b', p):
+    if re.search(r"\b(calculate|math|arithmetic|percentage|equation|multiply|divide|add|subtract|solve|derivative)\b", p) or re.search(
+        r"\d+\s*[\+\-\*\/]\s*\d+", p
+    ):
+        if not re.search(r"\b(python|script|code|riddle|puzzle|logical|story|function|bug)\b", p):
             logger.debug("Classifier: matched regex → %s", ROUTE_API_MATH)
             return ROUTE_API_MATH
 
