@@ -6,9 +6,9 @@ GBNF grammar so the model can ONLY emit a valid label.
 """
 
 import logging
-import os
+from typing import Any
 
-from engines.local_slm import LocalSLMEngine
+from engines.local_slm import ClassifierEngine
 
 logger = logging.getLogger(__name__)
 
@@ -61,10 +61,10 @@ _GRAMMAR_STR = "root ::= " + " | ".join(f'"{label}"' for label in _LABELS)
 _grammar = None
 
 
-def _get_grammar():
+def _get_grammar() -> Any:
     global _grammar
     if _grammar is None:
-        from llama_cpp import LlamaGrammar
+        from llama_cpp import LlamaGrammar  # type: ignore
 
         _grammar = LlamaGrammar.from_string(_GRAMMAR_STR)
     return _grammar
@@ -78,7 +78,7 @@ def classify(prompt: str) -> str:
         logger.debug("Classifier: long context (%d chars) → %s", len(prompt), ROUTE_API_LONG)
         return ROUTE_API_LONG
 
-    engine = LocalSLMEngine.get_instance()
+    engine = ClassifierEngine.get_instance()
     raw = engine.generate(
         prompt=f"Task:\n{prompt}\n\nLabel:",
         system_prompt=_SYSTEM_PROMPT,
